@@ -1,0 +1,349 @@
+rkbench/workbench.desktop.main.js (34)
+[108339:0404/194236.553687:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.grunt, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.555454:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.gulp, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.557779:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.handlebars, extension kinds: [ui, workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.558961:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.hlsl, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.559442:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.html, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.559880:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.html-language-features, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.560342:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.ini, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.561080:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.ipynb, extension kinds: [workspace, ui], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.561553:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.jake, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.562014:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.java, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.562495:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.javascript, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.563251:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.json, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.563756:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.json-language-features, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.564263:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.julia, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.564736:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.latex, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.565229:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.less, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.565775:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.log, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.566273:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.lua, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.566748:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.make, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.567211:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.markdown, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.567667:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.markdown-language-features, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.568171:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.markdown-math, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.568662:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.media-preview, extension kinds: [ui, workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.569513:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.merge-conflict, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.570042:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.microsoft-authentication, extension kinds: [ui, workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.570503:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for ms-vscode.js-debug, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.571356:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for ms-vscode.js-debug-companion, extension kinds: [ui], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.571855:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for ms-vscode.vscode-js-profile-table, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.572307:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.builtin-notebook-renderers, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.572720:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.npm, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.578369:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.objective-c, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.578892:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.perl, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.580813:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.php, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.581367:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.php-language-features, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.581846:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.powershell, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.582300:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.pug, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.582757:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.python, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.583207:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.r, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.583661:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.razor, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.586620:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.references-view, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.587169:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.restructuredtext, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.588357:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.ruby, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.588879:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.rust, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.590859:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.scss, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.591617:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.search-result, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.592615:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.shaderlab, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.593109:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.shellscript, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.594463:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.simple-browser, extension kinds: [ui, workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.594990:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.sql, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.595519:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.swift, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.596086:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.theme-abyss, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.596562:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.theme-defaults, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.597011:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.theme-kimbie-dark, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.597480:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.theme-monokai, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.597927:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.theme-monokai-dimmed, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.598396:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.theme-quietlight, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.598969:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.theme-red, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.599475:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.vscode-theme-seti, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.599936:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.theme-solarized-dark, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.600438:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.theme-solarized-light, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.605131:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for miguelsolorio.symbols, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.606187:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for RobbOwen.synthwave-vscode, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.607133:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for enkia.tokyo-night, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.613143:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.theme-tomorrow-night-blue, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.614774:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.tunnel-forwarding, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.615878:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.typescript, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.616862:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.typescript-language-features, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.617793:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.vb, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.619187:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for codeium.windsurf, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.626437:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for Codeium.windsurf-dev-containers, extension kinds: [ui], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.628022:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for codeium.windsurf-remote-openssh, extension kinds: [ui], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.628503:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.xml, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.628950:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.yaml, extension kinds: [ui, workspace, web], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.640468:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Found authentication providers. added: 3, removed: 0", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.642045:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Declared authentication provider: github", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.643415:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Declared authentication provider: github-enterprise", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.644744:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Declared authentication provider: microsoft", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.647042:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Declared authentication provider: microsoft-sovereign-cloud", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.647565:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Declared authentication provider: windsurf_auth", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-04T23:42:36.827Z] resolveShellEnv(): skipped (VSCODE_CLI is set)
+[main 2025-04-04T23:42:36.834Z] #1: https://windsurf-stable.codeium.com/api/update/linux-x64/stable/1eabbe10abd0f4843e53460086ba8422a1aebe02 - begin undefined g4 { b: {}, a: [Object: null prototype] {} }
+[108339:0404/194236.902183:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.terminal-suggest, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194236.902703:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for codeium.windsurf-remote-wsl, extension kinds: [ui], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-04T23:42:37.459Z] [File Watcher (node.js)] [raw] ["rename"] snippets
+[main 2025-04-04T23:42:37.460Z] [File Watcher (node.js)] [raw] ["rename"] snippets
+[108339:0404/194237.490166:INFO:CONSOLE(3290)] "AI generated workspace trust dialog contents not available.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3290)
+[108339:0404/194237.493637:INFO:CONSOLE(34)] "%cTRACE color: #888 DialogService#prompt Do you trust the authors of the files in this folder?", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-04T23:42:37.561Z] [File Watcher (node.js)] [ADDED] /home/owner/.windsurf_clean_profile/User/snippets
+[main 2025-04-04T23:42:37.562Z] [File Watcher (node.js)] [ADDED] /home/owner/.windsurf_clean_profile/User/snippets
+[main 2025-04-04T23:42:37.637Z] [File Watcher (node.js)]  >> normalized [ADDED] /home/owner/.windsurf_clean_profile/User/snippets
+[main 2025-04-04T23:42:37.639Z] User data changed
+[main 2025-04-04T23:42:37.640Z] [File Watcher (node.js)]  >> normalized [ADDED] /home/owner/.windsurf_clean_profile/User/snippets
+[108339:0404/194237.827506:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194237.828818:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194237.829937:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194237.830791:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194237.832635:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194237.864211:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194237.871065:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194237.874698:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 User data changed", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194237.884416:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194237.919630:INFO:CONSOLE(34)] "%c  ERR color: #f33 App icon customization is not supported on this OS: Error: App icon customization is not supported on this OS
+    at g2.setIcon (file:///usr/share/windsurf/resources/app/out/main.js:81:3281)
+    at Object.call (file:///usr/share/windsurf/resources/app/out/main.js:33:4564)
+    at Pf.s (file:///usr/share/windsurf/resources/app/out/main.js:31:19901)
+    at Pf.q (file:///usr/share/windsurf/resources/app/out/main.js:31:19424)
+    at Jo.value (file:///usr/share/windsurf/resources/app/out/main.js:31:18826)
+    at D.B (file:///usr/share/windsurf/resources/app/out/main.js:30:2373)
+    at D.C (file:///usr/share/windsurf/resources/app/out/main.js:30:2443)
+    at D.fire (file:///usr/share/windsurf/resources/app/out/main.js:30:2660)
+    at Jo.value (file:///usr/share/windsurf/resources/app/out/main.js:28:4893)
+    at D.B (file:///usr/share/windsurf/resources/app/out/main.js:30:2373)
+    at D.fire (file:///usr/share/windsurf/resources/app/out/main.js:30:2591)
+    at Jo.value (file:///usr/share/windsurf/resources/app/out/main.js:28:5077)
+    at D.B (file:///usr/share/windsurf/resources/app/out/main.js:30:2373)
+    at D.fire (file:///usr/share/windsurf/resources/app/out/main.js:30:2591)
+    at T (file:///usr/share/windsurf/resources/app/out/main.js:28:7328)
+    at IpcMainImpl.s (file:///usr/share/windsurf/resources/app/out/main.js:33:20534)
+    at IpcMainImpl.emit (node:events:518:28)
+    at WebContents.<anonymous> (node:electron/js2c/browser_init:2:85782)
+    at WebContents.emit (node:events:518:28)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194237.937205:INFO:CONSOLE(34)] "%cTRACE color: #888 lifecycle: phase changed (value: 4)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-04T23:42:38.039Z] #1: https://windsurf-stable.codeium.com/api/update/linux-x64/stable/1eabbe10abd0f4843e53460086ba8422a1aebe02 - end undefined 204 {
+  date: 'Fri, 04 Apr 2025 23:42:01 GMT',
+  'strict-transport-security': 'max-age=31536000; includeSubDomains',
+  vary: 'Origin'
+}
+[108339:0404/194238.245221:INFO:CONSOLE(34)] "%cTRACE color: #888 EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/node_modules'", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-04T23:42:38.973Z] ProxyResolver#loadSystemCertificates count 140
+[main 2025-04-04T23:42:38.986Z] ProxyResolver#loadSystemCertificates count filtered 137
+[108339:0404/194239.231426:INFO:CONSOLE(34)] "%cTRACE color: #888 RunAutomaticTasks: Trying to run tasks.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194239.232891:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.terminal-suggest, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194239.234418:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for codeium.windsurf-remote-wsl, extension kinds: [ui], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194239.256883:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for vscode.terminal-suggest, extension kinds: [workspace], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194239.258266:INFO:CONSOLE(34)] "%cTRACE color: #888 pickRunningLocation for codeium.windsurf-remote-wsl, extension kinds: [ui], isInstalledLocally: true, isInstalledRemotely: false, preference: None => LocalProcess", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-04T23:42:39.262Z] resolveShellEnv(): skipped (VSCODE_CLI is set)
+[108339:0404/194239.269075:INFO:CONSOLE(34)] "%cTRACE color: #888 RunAutomaticTasks: Found 2 automatic tasks", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194239.269668:INFO:CONSOLE(34)] "%cTRACE color: #888 RunAutomaticTasks: taskNames=[]", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194239.270163:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand windsurf.playAudio", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-04T23:42:39.305Z] Terminal profile not validated zsh [ 'zsh' ]
+[main 2025-04-04T23:42:39.305Z] Terminal profile not validated fish [ 'fish' ]
+[main 2025-04-04T23:42:39.305Z] Terminal profile not validated tmux [ 'tmux' ]
+[main 2025-04-04T23:42:39.306Z] Terminal profile not validated pwsh [ 'pwsh' ]
+[108339:0404/194239.394139:INFO:CONSOLE(34)] "%c INFO color: #33f [perf] Render performance baseline is 81ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-04T23:42:40.275Z] [UtilityProcess type: ptyHost, pid: <none>]: creating new...
+[main 2025-04-04T23:42:40.281Z] PtyHostService#_startPtyHost 
+    at xu.U (file:///usr/share/windsurf/resources/app/out/main.js:80:3012)
+    at xu.h (file:///usr/share/windsurf/resources/app/out/main.js:80:1515)
+    at file:///usr/share/windsurf/resources/app/out/main.js:80:2519
+    at Jo.value (file:///usr/share/windsurf/resources/app/out/main.js:28:4738)
+    at D.B (file:///usr/share/windsurf/resources/app/out/main.js:30:2373)
+    at D.fire (file:///usr/share/windsurf/resources/app/out/main.js:30:2591)
+    at bu.r (file:///usr/share/windsurf/resources/app/out/main.js:72:125846)
+    at file:///usr/share/windsurf/resources/app/out/main.js:72:124583
+    at IpcMainImpl.s (file:///usr/share/windsurf/resources/app/out/main.js:33:20534)
+    at IpcMainImpl.emit (node:events:518:28)
+    at WebContents.<anonymous> (node:electron/js2c/browser_init:2:85782)
+    at WebContents.emit (node:events:518:28)
+[main 2025-04-04T23:42:40.284Z] [UtilityProcess type: ptyHost, pid: 108514]: successfully created
+[108339:0404/194241.215412:INFO:CONSOLE(743)] "%c[Extension Host] %c(Windsurf) 2025-04-04 19:42:41 [INFO]: Language server started %c(at console.<anonymous> (file:///usr/share/windsurf/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:175:26811)) color: blue color:  color: grey", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (743)
+[main 2025-04-04T23:42:41.235Z] resolveShellEnv(): skipped (VSCODE_CLI is set)
+[108339:0404/194241.255878:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194241.257520:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194241.261781:INFO:CONSOLE(34)] "%cTRACE color: #888 MainThreadFileSystemEventService#$watch(): request to start watching uncorrelated (extension: codeium.windsurf, path: file:///home/owner/.codeium/windsurf, recursive: false, session: 0.5560935645241172, excludes: [], includes: undefined)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-04T23:42:41.263Z] Terminal profile not validated zsh [ 'zsh' ]
+[main 2025-04-04T23:42:41.264Z] Terminal profile not validated fish [ 'fish' ]
+[main 2025-04-04T23:42:41.264Z] Terminal profile not validated tmux [ 'tmux' ]
+[main 2025-04-04T23:42:41.265Z] Terminal profile not validated pwsh [ 'pwsh' ]
+[108339:0404/194241.316882:INFO:CONSOLE(3371)] "Extension Host", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[108339:0404/194241.316959:INFO:CONSOLE(3371)] "%c(Windsurf) 2025-04-04 19:42:41 [INFO]: Language server started
+ ", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[108339:0404/194241.317151:INFO:CONSOLE(3371)] "console.groupEnd", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[108339:0404/194241.385777:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] Getting password for codeium.windsurf extension:  windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-04T23:42:41.386Z] [EncryptionMainService] Checking if encryption is available...
+[main 2025-04-04T23:42:41.565Z] [EncryptionMainService] Encryption is available:  true
+[108339:0404/194241.566300:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] Getting password for codeium.windsurf extension:  windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194241.567066:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] Getting password for codeium.windsurf extension:  windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194241.585405:INFO:CONSOLE(34)] "%cTRACE color: #888 [SecretStorageService] Encryption is available, using persisted storage", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194241.587229:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] getting secret for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194241.588574:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] no secret found for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194241.590051:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] No password found for:  codeium.windsurf windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194241.592801:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] getting secret for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194241.594299:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] no secret found for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194241.597919:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] No password found for:  codeium.windsurf windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194241.599911:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] getting secret for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194241.603516:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] no secret found for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194241.604329:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] No password found for:  codeium.windsurf windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194241.648569:INFO:CONSOLE(743)] "%c[Extension Host] %c(Windsurf) 2025-04-04 19:42:41 [INFO]: LS lspClient started successfully %c(at console.<anonymous> (file:///usr/share/windsurf/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:175:26811)) color: blue color:  color: grey", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (743)
+[108339:0404/194241.749603:INFO:CONSOLE(3371)] "Extension Host", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[108339:0404/194241.749724:INFO:CONSOLE(3371)] "%c(Windsurf) 2025-04-04 19:42:41 [INFO]: LS lspClient started successfully
+ ", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[108339:0404/194241.749868:INFO:CONSOLE(3371)] "console.groupEnd", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[108339:0404/194243.692016:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand windsurf.fireProductAnalyticsEvent", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194243.719387:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand workbench.action.installCommandLine", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194243.720964:INFO:CONSOLE(34)] "%c  ERR color: #f33 command 'workbench.action.installCommandLine' not found: Error: command 'workbench.action.installCommandLine' not found
+    at SMt.n (vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js:1255:5051)
+    at SMt.executeCommand (vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js:1255:4983)
+    at async tNe.M (vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js:3302:38320)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194244.424265:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] Getting password for codeium.windsurf extension:  windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194244.424891:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] getting secret for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194244.425657:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] no secret found for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194244.426464:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] No password found for:  codeium.windsurf windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194244.443010:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand windsurf.initializeCascade", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194246.326089:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 [perf] SLOW task detected (1175ms) but renderer profiling is disabled via 'application.experimental.rendererProfiling'", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194246.356715:INFO:CONSOLE(2)] "Failed to fetch allowed models: Error: Missing API key. Please make sure you are signed in to the Codeium plugin and close / reopen the chat window. If the problem persists, please restart the IDE.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/extensions/windsurf/out/media/chat.js (2)
+[108339:0404/194246.357114:INFO:CONSOLE(2)] "Lexical ref does not exist.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/extensions/windsurf/out/media/chat.js (2)
+[108339:0404/194247.784078:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand notification.clear", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194249.270546:INFO:CONSOLE(34)] "%cTRACE color: #888 RunAutomaticTasks: waited some extra time, but no update of tasks configuration", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194251.786112:INFO:CONSOLE(34)] "%cTRACE color: #888 onWillActivateByEvent:  onCommand:windsurf.login", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194251.789085:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] Getting password for codeium.windsurf extension:  windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194251.789609:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] getting secret for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194251.790042:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] no secret found for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194251.790494:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] No password found for:  codeium.windsurf windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108339:0404/194253.550685:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Comments: URIs of continue on comments to add to storage .", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-04T23:43:02.812Z] update#checkForUpdates, state =  idle
+[main 2025-04-04T23:43:02.813Z] update#setState checking for updates
+[main 2025-04-04T23:43:02.813Z] resolveShellEnv(): skipped (VSCODE_CLI is set)
+[main 2025-04-04T23:43:02.814Z] #2: https://windsurf-stable.codeium.com/api/update/linux-x64/stable/1eabbe10abd0f4843e53460086ba8422a1aebe02 - begin undefined g4 { b: {}, a: [Object: null prototype] {} }
+[main 2025-04-04T23:43:02.881Z] #2: https://windsurf-stable.codeium.com/api/update/linux-x64/stable/1eabbe10abd0f4843e53460086ba8422a1aebe02 - end undefined 204 {
+  date: 'Fri, 04 Apr 2025 23:42:26 GMT',
+  'strict-transport-security': 'max-age=31536000; includeSubDomains',
+  vary: 'Origin'
+}
+[main 2025-04-04T23:43:02.883Z] update#setState idle
+ATTENTION: default value of option mesa_glthread overridden by environment.
+MESA-INTEL: warning: Ivy Bridge Vulkan support is incomplete
+[108910:0404/194303.704059:ERROR:angle_platform_impl.cc(44)] Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+ERR: Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+[108910:0404/194303.704226:ERROR:gl_display.cc(497)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+[108910:0404/194303.704293:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+[108910:0404/194303.704489:ERROR:angle_platform_impl.cc(44)] Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+ERR: Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+[108910:0404/194303.704575:ERROR:gl_display.cc(497)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+[108910:0404/194303.704646:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+[108910:0404/194303.704714:ERROR:gl_display.cc(801)] Initialization of all EGL display types failed.
+[108910:0404/194303.704786:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+MESA-INTEL: warning: Ivy Bridge Vulkan support is incomplete
+[108910:0404/194303.757708:ERROR:angle_platform_impl.cc(44)] Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+ERR: Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+[108910:0404/194303.757871:ERROR:gl_display.cc(497)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+[108910:0404/194303.758032:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+[108910:0404/194303.758264:ERROR:angle_platform_impl.cc(44)] Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+ERR: Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+[108910:0404/194303.758378:ERROR:gl_display.cc(497)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+[108910:0404/194303.758683:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+[108910:0404/194303.758819:ERROR:gl_display.cc(801)] Initialization of all EGL display types failed.
+[108910:0404/194303.758891:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+[108910:0404/194303.767291:ERROR:viz_main_impl.cc(166)] Exiting GPU process due to errors during initialization
+ATTENTION: default value of option mesa_glthread overridden by environment.
+MESA-INTEL: warning: Ivy Bridge Vulkan support is incomplete
+[108929:0404/194303.990188:ERROR:angle_platform_impl.cc(44)] Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+ERR: Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+[108929:0404/194303.990356:ERROR:gl_display.cc(497)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+[108929:0404/194303.990423:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+[108929:0404/194303.990607:ERROR:angle_platform_impl.cc(44)] Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+ERR: Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+[108929:0404/194303.990680:ERROR:gl_display.cc(497)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+[108929:0404/194303.990739:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+[108929:0404/194303.990800:ERROR:gl_display.cc(801)] Initialization of all EGL display types failed.
+[108929:0404/194303.990875:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+MESA-INTEL: warning: Ivy Bridge Vulkan support is incomplete
+[108929:0404/194304.038120:ERROR:angle_platform_impl.cc(44)] Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+ERR: Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+[108929:0404/194304.038230:ERROR:gl_display.cc(497)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+[108929:0404/194304.038305:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+[108929:0404/194304.038495:ERROR:angle_platform_impl.cc(44)] Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+ERR: Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+[108929:0404/194304.038585:ERROR:gl_display.cc(497)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+[108929:0404/194304.038655:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+[108929:0404/194304.038720:ERROR:gl_display.cc(801)] Initialization of all EGL display types failed.
+[108929:0404/194304.038785:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+[108929:0404/194304.043651:ERROR:viz_main_impl.cc(166)] Exiting GPU process due to errors during initialization
+[main 2025-04-04T23:43:04.160Z] update#setState idle
+ATTENTION: default value of option mesa_glthread overridden by environment.
+MESA-INTEL: warning: Ivy Bridge Vulkan support is incomplete
+[108954:0404/194304.484126:ERROR:angle_platform_impl.cc(44)] Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+ERR: Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+[108954:0404/194304.484239:ERROR:gl_display.cc(497)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+[108954:0404/194304.484300:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+[108954:0404/194304.484472:ERROR:angle_platform_impl.cc(44)] Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+ERR: Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+[108954:0404/194304.484557:ERROR:gl_display.cc(497)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+[108954:0404/194304.484634:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+[108954:0404/194304.484699:ERROR:gl_display.cc(801)] Initialization of all EGL display types failed.
+[108954:0404/194304.484771:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+MESA-INTEL: warning: Ivy Bridge Vulkan support is incomplete
+[108954:0404/194304.533029:ERROR:angle_platform_impl.cc(44)] Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+ERR: Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+[108954:0404/194304.533118:ERROR:gl_display.cc(497)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+[108954:0404/194304.533164:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+[108954:0404/194304.533285:ERROR:angle_platform_impl.cc(44)] Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+ERR: Display.cpp:1083 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+[108954:0404/194304.533354:ERROR:gl_display.cc(497)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+[108954:0404/194304.533407:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+[108954:0404/194304.533467:ERROR:gl_display.cc(801)] Initialization of all EGL display types failed.
+[108954:0404/194304.533515:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+[108954:0404/194304.535915:ERROR:viz_main_impl.cc(166)] Exiting GPU process due to errors during initialization
+ATTENTION: default value of option mesa_glthread overridden by environment.
+MESA-INTEL: warning: Ivy Bridge Vulkan support is incomplete
+ATTENTION: default value of option mesa_glthread overridden by environment.
+[108963:0404/194304.698724:WARNING:sandbox_linux.cc(430)] InitializeSandbox() called with multiple threads in process gpu-process.
+[108871:0404/194305.458302:INFO:CONSOLE(34)] "%c WARN color: #993 Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.vscode-selfhost-test-provider' wants API proposal 'attributableCoverage' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108871:0404/194305.458870:INFO:CONSOLE(34)] "%c WARN color: #993 Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108871:0404/194305.459446:INFO:CONSOLE(34)] "%c WARN color: #993 Via 'product.json#extensionEnabledApiProposals' extension 'github.vscode-pull-request-github' wants API proposal 'fileComments' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108871:0404/194305.459939:INFO:CONSOLE(34)] "%c WARN color: #993 Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108871:0404/194305.460553:INFO:CONSOLE(34)] "%c WARN color: #993 Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.debugpy' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108871:0404/194305.461227:INFO:CONSOLE(34)] "%c WARN color: #993 Via 'product.json#extensionEnabledApiProposals' extension 'ms-azuretools.vscode-azure-github-copilot' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108871:0404/194305.461829:INFO:CONSOLE(34)] "%c WARN color: #993 Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.cpptools' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108871:0404/194305.462457:INFO:CONSOLE(34)] "%c WARN color: #993 Via 'product.json#extensionEnabledApiProposals' extension 'redhat.java' wants API proposal 'documentPaste' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108871:0404/194305.463269:INFO:CONSOLE(34)] "%c WARN color: #993 Via 'product.json#extensionEnabledApiProposals' extension 'vscjava.vscode-java-pack' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108871:0404/194306.025091:INFO:CONSOLE(34)] "%c WARN color: #993 IWorkbenchContributionsRegistry#getContribution('windsurf.cascadePanel'): contribution instantiated before LifecyclePhase.Restored!", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108871:0404/194306.828828:INFO:CONSOLE(34)] "%c INFO color: #33f Started local extension host with pid 108995.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108871:0404/194310.141961:INFO:CONSOLE(34)] "%c  ERR color: #f33 App icon customization is not supported on this OS: Error: App icon customization is not supported on this OS
+    at g2.setIcon (file:///usr/share/windsurf/resources/app/out/main.js:81:3281)
+    at Object.call (file:///usr/share/windsurf/resources/app/out/main.js:33:4564)
+    at Pf.s (file:///usr/share/windsurf/resources/app/out/main.js:31:19901)
+    at Pf.q (file:///usr/share/windsurf/resources/app/out/main.js:31:19424)
+    at Jo.value (file:///usr/share/windsurf/resources/app/out/main.js:31:18826)
+    at D.B (file:///usr/share/windsurf/resources/app/out/main.js:30:2373)
+    at D.C (file:///usr/share/windsurf/resources/app/out/main.js:30:2443)
+    at D.fire (file:///usr/share/windsurf/resources/app/out/main.js:30:2660)
+    at Jo.value (file:///usr/share/windsurf/resources/app/out/main.js:28:4893)
+    at D.B (file:///usr/share/windsurf/resources/app/out/main.js:30:2373)
+    at D.fire (file:///usr/share/windsurf/resources/app/out/main.js:30:2591)
+    at Jo.value (file:///usr/share/windsurf/resources/app/out/main.js:28:5077)
+    at D.B (file:///usr/share/windsurf/resources/app/out/main.js:30:2373)
+    at D.fire (file:///usr/share/windsurf/resources/app/out/main.js:30:2591)
+    at T (file:///usr/share/windsurf/resources/app/out/main.js:28:7328)
+    at IpcMainImpl.s (file:///usr/share/windsurf/resources/app/out/main.js:33:20534)
+    at IpcMainImpl.emit (node:events:518:28)
+    at WebContents.<anonymous> (node:electron/js2c/browser_init:2:85782)
+    at WebContents.emit (node:events:518:28)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108871:0404/194310.630396:INFO:CONSOLE(34)] "%c INFO color: #33f [perf] Render performance baseline is 117ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[108871:0404/194312.590710:INFO:CONSOLE(743)] "%c[Extension Host] %c(Windsurf) 2025-04-04 19:43:12 [INFO]: Language server started color: blue color: ", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (743)
+[108871:0404/194312.719342:INFO:CONSOLE(3371)] "Extension Host", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[108871:0404/194312.720269:INFO:CONSOLE(3371)] "%c(Windsurf) 2025-04-04 19:43:12 [INFO]: Language server started
+ ", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[108871:0404/194312.720345:INFO:CONSOLE(3371)] "console.groupEnd", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[108871:0404/194313.041628:INFO:CONSOLE(743)] "%c[Extension Host] %c(Windsurf) 2025-04-04 19:43:12 [INFO]: LS lspClient started successfully color: blue color: ", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (743)
+[108871:0404/194313.152865:INFO:CONSOLE(3371)] "Extension Host", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[108871:0404/194313.152938:INFO:CONSOLE(3371)] "%c(Windsurf) 2025-04-04 19:43:12 [INFO]: LS lspClient started successfully
+ ", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[108871:0404/194313.153017:INFO:CONSOLE(3371)] "console.groupEnd", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+
+

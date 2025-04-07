@@ -1,0 +1,382 @@
+le://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220630.726099:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Declared authentication provider: github", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220630.727602:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Declared authentication provider: github-enterprise", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220630.728234:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Declared authentication provider: microsoft", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220630.728965:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Declared authentication provider: microsoft-sovereign-cloud", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220630.729438:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Declared authentication provider: windsurf_auth", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-05T02:06:30.904Z] resolveShellEnv(): skipped (VSCODE_CLI is set)
+[main 2025-04-05T02:06:30.907Z] #1: https://windsurf-stable.codeium.com/api/update/linux-x64/stable/1eabbe10abd0f4843e53460086ba8422a1aebe02 - begin undefined g4 { b: {}, a: [Object: null prototype] {} }
+[main 2025-04-05T02:06:31.284Z] #1: https://windsurf-stable.codeium.com/api/update/linux-x64/stable/1eabbe10abd0f4843e53460086ba8422a1aebe02 - end undefined 204 {
+  date: 'Sat, 05 Apr 2025 02:05:49 GMT',
+  'strict-transport-security': 'max-age=31536000; includeSubDomains',
+  vary: 'Origin'
+}
+[9590:0404/220631.316457:INFO:CONSOLE(34)] "%c  ERR color: #f33 App icon customization is not supported on this OS: Error: App icon customization is not supported on this OS
+    at g2.setIcon (file:///usr/share/windsurf/resources/app/out/main.js:81:3281)
+    at Object.call (file:///usr/share/windsurf/resources/app/out/main.js:33:4564)
+    at Pf.s (file:///usr/share/windsurf/resources/app/out/main.js:31:19901)
+    at Pf.q (file:///usr/share/windsurf/resources/app/out/main.js:31:19424)
+    at Jo.value (file:///usr/share/windsurf/resources/app/out/main.js:31:18826)
+    at D.B (file:///usr/share/windsurf/resources/app/out/main.js:30:2373)
+    at D.C (file:///usr/share/windsurf/resources/app/out/main.js:30:2443)
+    at D.fire (file:///usr/share/windsurf/resources/app/out/main.js:30:2660)
+    at Jo.value (file:///usr/share/windsurf/resources/app/out/main.js:28:4893)
+    at D.B (file:///usr/share/windsurf/resources/app/out/main.js:30:2373)
+    at D.fire (file:///usr/share/windsurf/resources/app/out/main.js:30:2591)
+    at Jo.value (file:///usr/share/windsurf/resources/app/out/main.js:28:5077)
+    at D.B (file:///usr/share/windsurf/resources/app/out/main.js:30:2373)
+    at D.fire (file:///usr/share/windsurf/resources/app/out/main.js:30:2591)
+    at T (file:///usr/share/windsurf/resources/app/out/main.js:28:7328)
+    at IpcMainImpl.s (file:///usr/share/windsurf/resources/app/out/main.js:33:20534)
+    at IpcMainImpl.emit (node:events:518:28)
+    at WebContents.<anonymous> (node:electron/js2c/browser_init:2:85782)
+    at WebContents.emit (node:events:518:28)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220631.441942:INFO:CONSOLE(34)] "%cTRACE color: #888 lifecycle: phase changed (value: 4)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220631.659094:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Comments: URIs of continue on comments to add to storage .", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220631.667049:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220631.668570:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220631.670209:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220631.671254:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220631.675193:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220631.806113:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220631.822146:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220631.848450:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220631.890837:INFO:CONSOLE(34)] "%cTRACE color: #888 RunAutomaticTasks: Trying to run tasks.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220631.902908:INFO:CONSOLE(34)] "%cTRACE color: #888 RunAutomaticTasks: Found 2 automatic tasks", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220631.903638:INFO:CONSOLE(34)] "%cTRACE color: #888 RunAutomaticTasks: taskNames=[]", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220631.971687:INFO:CONSOLE(34)] "%cTRACE color: #888 EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/node_modules'", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220632.605956:INFO:CONSOLE(34)] "%c INFO color: #33f [perf] Render performance baseline is 48ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-05T02:06:32.859Z] ProxyResolver#loadSystemCertificates count 140
+[main 2025-04-05T02:06:32.872Z] ProxyResolver#loadSystemCertificates count filtered 137
+[main 2025-04-05T02:06:34.032Z] resolveShellEnv(): skipped (VSCODE_CLI is set)
+[main 2025-04-05T02:06:34.045Z] Terminal profile not validated zsh [ 'zsh' ]
+[main 2025-04-05T02:06:34.046Z] Terminal profile not validated fish [ 'fish' ]
+[main 2025-04-05T02:06:34.046Z] Terminal profile not validated tmux [ 'tmux' ]
+[main 2025-04-05T02:06:34.046Z] Terminal profile not validated pwsh [ 'pwsh' ]
+[main 2025-04-05T02:06:34.160Z] [UtilityProcess type: ptyHost, pid: <none>]: creating new...
+[main 2025-04-05T02:06:34.166Z] PtyHostService#_startPtyHost 
+    at xu.U (file:///usr/share/windsurf/resources/app/out/main.js:80:3012)
+    at xu.h (file:///usr/share/windsurf/resources/app/out/main.js:80:1515)
+    at file:///usr/share/windsurf/resources/app/out/main.js:80:2519
+    at Jo.value (file:///usr/share/windsurf/resources/app/out/main.js:28:4738)
+    at D.B (file:///usr/share/windsurf/resources/app/out/main.js:30:2373)
+    at D.fire (file:///usr/share/windsurf/resources/app/out/main.js:30:2591)
+    at bu.r (file:///usr/share/windsurf/resources/app/out/main.js:72:125846)
+    at file:///usr/share/windsurf/resources/app/out/main.js:72:124583
+    at IpcMainImpl.s (file:///usr/share/windsurf/resources/app/out/main.js:33:20534)
+    at IpcMainImpl.emit (node:events:518:28)
+    at WebContents.<anonymous> (node:electron/js2c/browser_init:2:85782)
+    at WebContents.emit (node:events:518:28)
+[main 2025-04-05T02:06:34.171Z] [UtilityProcess type: ptyHost, pid: 9767]: successfully created
+[9590:0404/220635.369428:INFO:CONSOLE(743)] "%c[Extension Host] %c(Windsurf) 2025-04-04 22:06:35 [INFO]: Language server started %c(at console.<anonymous> (file:///usr/share/windsurf/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:175:26811)) color: blue color:  color: grey", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (743)
+[9590:0404/220635.398006:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.399201:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.401069:INFO:CONSOLE(34)] "%cTRACE color: #888 MainThreadFileSystemEventService#$watch(): request to start watching uncorrelated (extension: codeium.windsurf, path: file:///home/owner/.codeium/windsurf, recursive: false, session: 0.9241901043178762, excludes: [], includes: undefined)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.471258:INFO:CONSOLE(3371)] "Extension Host", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[9590:0404/220635.471342:INFO:CONSOLE(3371)] "%c(Windsurf) 2025-04-04 22:06:35 [INFO]: Language server started
+ ", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[9590:0404/220635.471437:INFO:CONSOLE(3371)] "console.groupEnd", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[9590:0404/220635.516842:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] Getting password for codeium.windsurf extension:  windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-05T02:06:35.517Z] [EncryptionMainService] Checking if encryption is available...
+[main 2025-04-05T02:06:35.667Z] [EncryptionMainService] Encryption is available:  true
+[9590:0404/220635.669765:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] Getting password for codeium.windsurf extension:  windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.672222:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] Getting password for codeium.windsurf extension:  windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.673560:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] Getting password for codeium.windsurf extension:  windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.674202:INFO:CONSOLE(34)] "%cTRACE color: #888 [SecretStorageService] Encryption is available, using persisted storage", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.674809:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] getting secret for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.675377:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] no secret found for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.675971:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] No password found for:  codeium.windsurf windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.676540:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] getting secret for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.677022:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] no secret found for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.677485:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] No password found for:  codeium.windsurf windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.678857:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] getting secret for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.679927:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] no secret found for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.681099:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] No password found for:  codeium.windsurf windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.682256:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] getting secret for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.682971:INFO:CONSOLE(34)] "%cTRACE color: #888 [secrets] no secret found for key: secret://{"extensionId":"codeium.windsurf","key":"windsurf_auth.sessions"}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.683508:INFO:CONSOLE(34)] "%cTRACE color: #888 [mainThreadSecretState] No password found for:  codeium.windsurf windsurf_auth.sessions", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220635.690524:INFO:CONSOLE(743)] "%c[Extension Host] %c(Windsurf) 2025-04-04 22:06:35 [INFO]: LS lspClient started successfully %c(at console.<anonymous> (file:///usr/share/windsurf/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:175:26811)) color: blue color:  color: grey", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (743)
+[9590:0404/220635.796014:INFO:CONSOLE(3371)] "Extension Host", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[9590:0404/220635.797381:INFO:CONSOLE(3371)] "%c(Windsurf) 2025-04-04 22:06:35 [INFO]: LS lspClient started successfully
+ ", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[9590:0404/220635.797488:INFO:CONSOLE(3371)] "console.groupEnd", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (3371)
+[9590:0404/220635.847075:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand windsurf.initializeCascade", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220637.312502:INFO:CONSOLE(2)] "Failed to fetch allowed models: Error: Missing API key. Please make sure you are signed in to the Codeium plugin and close / reopen the chat window. If the problem persists, please restart the IDE.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/extensions/windsurf/out/media/chat.js (2)
+[9590:0404/220637.312653:INFO:CONSOLE(2)] "Lexical ref does not exist.", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/extensions/windsurf/out/media/chat.js (2)
+[9590:0404/220641.904125:INFO:CONSOLE(34)] "%cTRACE color: #888 RunAutomaticTasks: waited some extra time, but no update of tasks configuration", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-05T02:06:57.041Z] update#checkForUpdates, state =  idle
+[main 2025-04-05T02:06:57.042Z] update#setState checking for updates
+[main 2025-04-05T02:06:57.042Z] resolveShellEnv(): skipped (VSCODE_CLI is set)
+[main 2025-04-05T02:06:57.044Z] #2: https://windsurf-stable.codeium.com/api/update/linux-x64/stable/1eabbe10abd0f4843e53460086ba8422a1aebe02 - begin undefined g4 { b: {}, a: [Object: null prototype] {} }
+[main 2025-04-05T02:06:57.107Z] #2: https://windsurf-stable.codeium.com/api/update/linux-x64/stable/1eabbe10abd0f4843e53460086ba8422a1aebe02 - end undefined 204 {
+  date: 'Sat, 05 Apr 2025 02:06:15 GMT',
+  'strict-transport-security': 'max-age=31536000; includeSubDomains',
+  vary: 'Origin'
+}
+[main 2025-04-05T02:06:57.108Z] update#setState idle
+[9590:0404/220657.291968:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand notification.clear", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.546444:INFO:CONSOLE(34)] "%cTRACE color: #888 onWillActivateByEvent:  onLanguage", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.569786:INFO:CONSOLE(34)] "%cTRACE color: #888 [IE] (editor:vs.editor.ICodeEditor:1) NEW controller", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.612963:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] resolve() - enter file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.615638:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] resolveFromFile() file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.618245:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand windsurf.playAudio", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.648122:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] resolveFromContent() - enter file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.648908:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] doCreateTextModel() file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.666009:INFO:CONSOLE(34)] "%cTRACE color: #888 onWillActivateByEvent:  onLanguage", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.697290:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: notifyNavigation() (editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py, event: <none>)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.698135:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: notifyNavigation() not ignoring (editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py, event: <none>)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.699450:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: onSelectionAwareEditorNavigation() (editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py, event: <none>)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.700021:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: add() (editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py, event: <none>)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.700566:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: index: 0, navigating: false
+- group: 0, editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py, selection: line: 1-1, col:  1-1
+                        ", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.712421:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: Document Colors] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py is 1000ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.849257:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.851006:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.857576:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.860604:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.862247:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.863402:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand editor.action.inlineSuggest.trigger", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.890174:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220700.890889:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220701.035434:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220701.039962:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220701.041108:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220701.055979:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: InlineCompletionsDebounce] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py is 50ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220701.233936:INFO:CONSOLE(743)] "%c[Extension Host] %cConnectError: [invalid_argument] validation error:
+ - metadata.api_key: value length must be at least 1 characters [string.min_len]: validation error:
+ - metadata.api_key: value length must be at least 1 characters [string.min_len]
+        at c (/usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3619708)
+        at l (/usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3620104)
+        at next (/usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3626326)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async /usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3228586
+        at async Object.unary (/usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3625294)
+        at async Object.refreshContextForIdeAction (/usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3612942) %c(at console.<anonymous> (file:///usr/share/windsurf/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:175:26811)) color: blue color:  color: grey", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (743)
+[9590:0404/220701.258927:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: Links] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py is 1000ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220701.351320:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: Folding] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py is 200ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220701.496136:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220701.497456:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: CodeLensProvide] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py is 250ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220704.770707:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand notification.clear", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.371470:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] dispose() file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.374596:INFO:CONSOLE(34)] "%cTRACE color: #888 [backup tracker] discarding backup file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py ", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.375830:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] resolve() - enter file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.378930:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] resolveFromFile() file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.387311:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.388645:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.389501:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand editor.action.inlineSuggest.trigger", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.395922:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] resolveFromContent() - enter file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.396439:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] doCreateTextModel() file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.430960:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: notifyNavigation() (editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt, event: <none>)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.431457:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: notifyNavigation() not ignoring (editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt, event: <none>)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.431924:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: onSelectionAwareEditorNavigation() (editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt, event: <none>)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.432342:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: add() (editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt, event: <none>)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.432752:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: index: 1, navigating: false
+- group: 0, editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py, selection: line: 1-1, col:  1-1
+- group: 0, editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt, selection: line: 1-1, col:  1-1
+                        ", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.474423:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.476263:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.478754:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.481445:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.483115:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.484121:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand editor.action.inlineSuggest.trigger", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.493126:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.495726:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.521948:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.524951:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.525663:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.535214:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: InlineCompletionsDebounce] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt is 50ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.562940:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: Document Colors] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt is 1000ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.564445:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: Links] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt is 1000ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.606077:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: Folding] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt is 200ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.662103:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.663103:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: CodeLensProvide] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt is 250ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220706.924618:INFO:CONSOLE(743)] "%c[Extension Host] %cConnectError: [invalid_argument] validation error:
+ - metadata.api_key: value length must be at least 1 characters [string.min_len]: validation error:
+ - metadata.api_key: value length must be at least 1 characters [string.min_len]
+        at c (/usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3619708)
+        at l (/usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3620104)
+        at next (/usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3626326)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async /usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3228586
+        at async Object.unary (/usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3625294)
+        at async Object.refreshContextForIdeAction (/usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3612942) %c(at console.<anonymous> (file:///usr/share/windsurf/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:175:26811)) color: blue color:  color: grey", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (743)
+[9590:0404/220712.364568:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand workbench.action.files.openFolder", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-05T02:07:12.367Z] [DialogMainService]: request to acquire file dialog lock {
+  title: 'Open Folder',
+  buttonLabel: undefined,
+  filters: undefined,
+  defaultPath: '/home/owner/Documents/scripts/AI/swipswaps/skydiveu',
+  properties: [ 'multiSelections', 'openDirectory', 'createDirectory' ]
+}
+[main 2025-04-05T02:07:12.368Z] [DialogMainService]: new file dialog lock created {
+  title: 'Open Folder',
+  buttonLabel: undefined,
+  filters: undefined,
+  defaultPath: '/home/owner/Documents/scripts/AI/swipswaps/skydiveu',
+  properties: [ 'multiSelections', 'openDirectory', 'createDirectory' ]
+}
+[9590:0404/220712.949521:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Comments: URIs of continue on comments to add to storage .", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-05T02:07:14.240Z] [DialogMainService]: file dialog lock disposed {
+  title: 'Open Folder',
+  buttonLabel: undefined,
+  filters: undefined,
+  defaultPath: '/home/owner/Documents/scripts/AI/swipswaps/skydiveu',
+  properties: [ 'multiSelections', 'openDirectory', 'createDirectory' ]
+}
+[9590:0404/220714.264224:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] resolve() - enter file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220714.264838:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] resolveFromFile() file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.423442:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand workbench.action.files.newUntitledFile", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.450512:INFO:CONSOLE(34)] "%cTRACE color: #888 [IE] (editor:vs.editor.ICodeEditor:3) NEW controller", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.492509:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: notifyNavigation() (editor: untitled:Untitled-1, event: <none>)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.493785:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: notifyNavigation() not ignoring (editor: untitled:Untitled-1, event: <none>)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.494782:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: onSelectionAwareEditorNavigation() (editor: untitled:Untitled-1, event: <none>)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.495298:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: add() (editor: untitled:Untitled-1, event: <none>)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.495798:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: index: 2, navigating: false
+- group: 0, editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py, selection: line: 1-1, col:  1-1
+- group: 0, editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt, selection: line: 1-1, col:  1-1
+- group: 0, editor: untitled:Untitled-1, selection: line: 1-1, col:  1-1
+                        ", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.550807:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.552847:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.555136:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand editor.action.inlineSuggest.trigger", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.562412:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.563223:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.564411:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.566616:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.567194:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.567734:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand editor.action.inlineSuggest.trigger", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.569827:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.570283:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.576966:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: Document Colors] for untitled:Untitled-1 is 1000ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.589289:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.590728:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.592747:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.598983:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: Links] for untitled:Untitled-1 is 1000ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.619319:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: InlineCompletionsDebounce] for untitled:Untitled-1 is 50ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.668227:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: Folding] for untitled:Untitled-1 is 200ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.826460:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220719.827527:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: CodeLensProvide] for untitled:Untitled-1 is 250ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220720.500060:INFO:CONSOLE(34)] "%cTRACE color: #888 Session Languages: ["python","plaintext"]", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220720.501871:INFO:CONSOLE(34)] "%cTRACE color: #888 Workspace Languages: ["plaintext","python","xml","shellscript"]", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220720.503164:INFO:CONSOLE(34)] "%cTRACE color: #888 Historical Workspace Opened Languages: ["python","plaintext"]", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220720.504356:INFO:CONSOLE(34)] "%cTRACE color: #888 Historical Globally Opened Languages: ["python","plaintext"]", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220720.505214:INFO:CONSOLE(34)] "%cTRACE color: #888 Computed Language Detection Biases: {"python":16,"plaintext":16,"xml":5,"shellscript":5}", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.189006:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: index: 1, navigating: false
+- group: 0, editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py, selection: line: 1-1, col:  1-1
+- group: 0, editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt, selection: line: 1-1, col:  1-1
+                        ", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.219788:INFO:CONSOLE(34)] "%cTRACE color: #888 [backup tracker] discarding backup untitled:Untitled-1 ", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.220623:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] resolve() - enter file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.221266:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] resolveFromFile() file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.258177:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: notifyNavigation() (editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt, event: <none>)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.258735:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: notifyNavigation() not ignoring (editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt, event: <none>)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.259232:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: onSelectionAwareEditorNavigation() (editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt, event: <none>)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.259721:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: replace() (editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt, event: <none>)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.261998:INFO:CONSOLE(34)] "%cTRACE color: #888 [History stack global-default]: index: 1, navigating: false
+- group: 0, editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/__manifest__.py, selection: line: 1-1, col:  1-1
+- group: 0, editor: file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt, selection: line: 1-1, col:  1-1
+                        ", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.326792:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.327641:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.329877:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand editor.action.inlineSuggest.trigger", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.336328:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.338682:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.339834:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.341063:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.343483:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.344310:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand editor.action.inlineSuggest.trigger", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.345689:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.347645:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.361132:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: Document Colors] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt is 1000ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.364159:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.364921:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.367711:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.369978:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: Links] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt is 1000ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.381330:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: InlineCompletionsDebounce] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt is 50ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.428399:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: Folding] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt is 200ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.502734:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.503814:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: CodeLensProvide] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt is 250ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220722.743555:INFO:CONSOLE(743)] "%c[Extension Host] %cConnectError: [invalid_argument] validation error:
+ - metadata.api_key: value length must be at least 1 characters [string.min_len]: validation error:
+ - metadata.api_key: value length must be at least 1 characters [string.min_len]
+        at c (/usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3619708)
+        at l (/usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3620104)
+        at next (/usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3626326)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async /usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3228586
+        at async Object.unary (/usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3625294)
+        at async Object.refreshContextForIdeAction (/usr/share/windsurf/resources/app/extensions/windsurf/dist/extension.js:2:3612942) %c(at console.<anonymous> (file:///usr/share/windsurf/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:175:26811)) color: blue color:  color: grey", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (743)
+[9590:0404/220723.353545:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Comments: URIs of continue on comments to add to storage .", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220728.456447:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Comments: URIs of continue on comments to add to storage .", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220735.431700:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220745.609602:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] resolve() - enter file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220745.610820:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] resolveFromFile() file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220745.860484:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220745.861314:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: CodeLensProvide] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt is 250ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220747.774701:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Comments: URIs of continue on comments to add to storage .", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220828.497838:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Comments: URIs of continue on comments to add to storage .", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220834.809909:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] resolve() - enter file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220834.811475:INFO:CONSOLE(34)] "%cTRACE color: #888 [text file model] resolveFromFile() file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220834.971956:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220834.972418:INFO:CONSOLE(34)] "%cTRACE color: #888 [DEBOUNCE: CodeLensProvide] for file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/requirements.txt is 250ms", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220835.394666:INFO:CONSOLE(34)] "%cTRACE color: #888 CommandService#executeCommand _setContext", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-05T02:08:37.055Z] Lifecycle#window.on('close') - window ID 1
+[main 2025-04-05T02:08:37.055Z] Lifecycle#unload() - window ID 1
+[9590:0404/220837.057584:INFO:CONSOLE(34)] "%cTRACE color: #888 [lifecycle] onBeforeUnload (reason: 1)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220837.065200:INFO:CONSOLE(34)] "%cTRACE color: #888 [lifecycle] onBeforeUnload continues without veto", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220837.066497:INFO:CONSOLE(34)] "%cTRACE color: #888 [lifecycle] onWillUnload (reason: 1)", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[9590:0404/220837.068860:INFO:CONSOLE(34)] "%cDEBUG background: #eee; color: #888 Comments: URIs of continue on comments to add to storage .", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-05T02:08:37.114Z] [UtilityProcess id: 1, type: extensionHost, pid: 9701]: received exit event with code 0
+[main 2025-04-05T02:08:37.115Z] Extension host with pid 9701 exited with code: 0, signal: unknown.
+[9590:0404/220837.133815:INFO:CONSOLE(34)] "%cTRACE color: #888 Renderer->UtilityProcess#disposeWorker [object Object]", source: vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js (34)
+[main 2025-04-05T02:08:37.135Z] Lifecycle#onBeforeCloseWindow.fire() - window ID 1
+[main 2025-04-05T02:08:37.142Z] IPC Object URL: Removed channel vscode:bd3bcc92-5b9c-45d1-864b-71b1fe6caf2f.
+[main 2025-04-05T02:08:37.147Z] Lifecycle#window.on('closed') - window ID 1
+[main 2025-04-05T02:08:37.148Z] Lifecycle#onWillShutdown.fire()
+[main 2025-04-05T02:08:37.152Z] Lifecycle#onWillShutdown - begin 'instanceLockfile'
+[main 2025-04-05T02:08:37.156Z] storageMainService#onWillShutdown()
+[main 2025-04-05T02:08:37.157Z] Lifecycle#onWillShutdown - begin 'applicationStorage'
+[main 2025-04-05T02:08:37.157Z] Lifecycle#onWillShutdown - begin 'workspaceStorage'
+[main 2025-04-05T02:08:37.157Z] Lifecycle#onWillShutdown - begin 'extHostStarter'
+[main 2025-04-05T02:08:37.157Z] [UtilityProcess id: 1, type: fileWatcher, pid: 9682]: attempting to kill the process...
+[main 2025-04-05T02:08:37.158Z] [UtilityProcess id: 1, type: fileWatcher, pid: 9682]: successfully killed the process
+[main 2025-04-05T02:08:37.159Z] Lifecycle#onWillShutdown - end 'extHostStarter'
+[main 2025-04-05T02:08:37.159Z] Lifecycle#app.on(window-all-closed)
+[main 2025-04-05T02:08:37.159Z] Lifecycle#app.on(before-quit)
+[main 2025-04-05T02:08:37.159Z] Lifecycle#onBeforeShutdown.fire()
+[main 2025-04-05T02:08:37.160Z] [WindowsStateHandler] onBeforeShutdown {
+  lastActiveWindow: {
+    workspaceIdentifier: undefined,
+    folder: 'file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim',
+    backupPath: '/home/owner/.windsurf_clean_profile/Backups/990873d48400ecaa22546c26708d9028',
+    remoteAuthority: undefined,
+    uiState: [Object: null prototype] {
+      mode: 1,
+      x: 40,
+      y: 27,
+      width: 1200,
+      height: 773,
+      zoomLevel: undefined
+    }
+  },
+  lastPluginDevelopmentHostWindow: undefined,
+  openedWindows: []
+}
+[main 2025-04-05T02:08:37.160Z] Lifecycle#app.on(will-quit) - begin
+[main 2025-04-05T02:08:37.175Z] Lifecycle#onWillShutdown - end 'instanceLockfile'
+[main 2025-04-05T02:08:37.176Z] [File Watcher (node.js)] stopping fs.watchFile() on /home/owner/.windsurf_clean_profile/User/settings.json (correlationId: undefined)
+[main 2025-04-05T02:08:37.221Z] [UtilityProcess id: 1, type: fileWatcher, pid: 9682]: received exit event with code 0
+[main 2025-04-05T02:08:37.221Z] [UtilityProcessWorker]: terminated normally with code 0, signal: unknown
+[main 2025-04-05T02:08:37.241Z] [File Watcher (node.js)] Request to stop watching: /home/owner/.windsurf_clean_profile/User (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>)
+[main 2025-04-05T02:08:37.242Z] [File Watcher (node.js)] stopping file watcher (/home/owner/.windsurf_clean_profile/User (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>))
+[main 2025-04-05T02:08:37.252Z] StorageMainService: closed application storage
+[main 2025-04-05T02:08:37.252Z] Lifecycle#onWillShutdown - end 'applicationStorage'
+[main 2025-04-05T02:08:37.493Z] StorageMainService: closed workspace storage (d601aa247dcfebfcbb1f0bda0f2e8fab)
+[main 2025-04-05T02:08:37.493Z] Lifecycle#onWillShutdown - end 'workspaceStorage'
+[main 2025-04-05T02:08:37.494Z] Lifecycle#app.on(will-quit) - after fireOnWillShutdown
+[main 2025-04-05T02:08:37.494Z] Lifecycle#app.on(will-quit) - calling app.quit()
+[main 2025-04-05T02:08:37.495Z] [UtilityProcess type: ptyHost, pid: 9767]: received exit event with code 0
+owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim$ 
+

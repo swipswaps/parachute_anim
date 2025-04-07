@@ -1,0 +1,188 @@
+Here's a complete restatement of your requirements and enforcement protocols, compiled from our conversation history. This serves as the master reference for all future scripts, responses, and code behavior, ensuring strict adherence to your protocol.
+
+✅ MASTER REQUIREMENTS & RULES
+1. ✅ FULL DEPENDENCY MANAGEMENT
+All tools/scripts must:
+
+Automatically detect, install, and configure all dependencies via:
+
+apt, pip, pip3, and pipx
+
+Include fallbacks and repair logic for:
+
+Broken packages
+
+Missing paths
+
+Environment conflicts
+
+Use retry, detection, and resolution patterns
+
+Abstract all manual steps from the user
+
+2. ✅ ENFORCED RESPONSE FORMAT
+Every response must include:
+
+✅ A. Compliance Checklist (at the end of every submission)
+Requirement	Met?	Notes
+All features implemented	✅	No partial answers
+Verified working code	✅	No pseudocode
+Human-readable output	✅	Real-time messages shown
+Dependencies auto-managed	✅	apt, pip, etc.
+Failure modes handled	✅	Retry + fallback
+No placeholders used	✅	Unless explicitly approved
+✅ B. Failure Scenario Prediction
+List all possible causes for failure
+
+Add logic or warnings to script to prevent/handle them
+
+✅ C. Final Output Verification Table
+Explicit list of all:
+
+Output files
+
+Directory locations
+
+Log paths
+
+Return values
+
+Completion markers
+
+✅ D. Audit Trail Section
+Timestamped logs of what was changed or added per request
+
+Helps track full script evolution
+
+3. ✅ CODE RESPONSE RULES
+No pseudocode, no ellipses.
+
+No placeholder data unless explicitly approved.
+
+No partial feature sets — implement entire request or none.
+
+All output must be copy-paste ready and valid.
+
+Full file paths and filenames must be displayed.
+
+Never omit any part of an updated file. Always show full rewritten version.
+
+4. ✅ FULL SCRIPT AND FILE OUTPUTS
+Always show:
+
+Full, complete script (not just patches)
+
+Path of the script
+
+All config paths, environment variables, and expected inputs/outputs
+
+5. ✅ ENFORCED SELF-HEALING & ABSTRACTION
+Scripts must:
+
+Abstract away all manual steps from the user
+
+Include recovery logic for:
+
+Missing packages
+
+Broken downloads
+
+Corrupted installs
+
+Hardware issues
+
+Avoid requiring the user to run separate commands
+
+Use intelligent auto-detection of:
+
+Logged-in users
+
+Permissions
+
+Operating system versions
+
+Folder structure
+
+Where applicable, log and retry issues silently unless terminal failure
+
+6. ✅ STRUCTURED OUTPUTS
+All structured data must be displayed as full tables:
+
+Never summarize unless explicitly asked
+
+Must include headers like Code, Comments, Compliance, Status
+
+7. ✅ USER-APPROVED FLOW CONTROL
+Always ask before:
+
+Using mock data
+
+Generating example inputs
+
+Creating GUI-based workflows unless explicitly approved
+
+8. ✅ SPECIFIC PROJECT RULES
+A. YouTube to 3D Model Workflow
+Must include:
+
+Video download from timestamp
+
+Frame extraction
+
+Meshroom automation
+
+3D output in .obj, .stl, or .glb
+
+No user interaction beyond script start
+
+B. Chromium RPM Installer Tool
+Includes:
+
+Mirror ranking
+
+RPM Fusion metalink replacement
+
+Retry with wget fallback
+
+Real-time terminal status logs
+
+.spec packaging for persistent use
+
+9. ✅ FEATURE COMPLETION VERIFICATION
+"No feature may be marked complete unless proof is shown."
+
+This means:
+
+Visual output shown (logs, screenshots, renders)
+
+Exported files or generated artifacts listed
+
+CLI logs shown in response where applicable
+
+Errors traced and included in logs
+
+10. ✅ FAILURE = FULL REWRITE
+"If an issue is found, the entire response must be rewritten in full."
+
+This applies to:
+
+Incorrect file names
+
+Partial code segments
+
+Any broken logic
+
+Missed requirements
+
+✅ SUMMARY: ALL ACTIVE ENFORCEMENTS
+Enforcement Type	Status	Notes
+No partial answers	✅	All responses must be complete
+Full file output only	✅	Never patches or snippets
+Auto-dependency handling	✅	Must handle apt, pip, etc.
+No placeholders	✅	Unless explicitly approved
+Real-time error/status logs	✅	Never buffer output
+Failure prediction required	✅	Included in every response
+Compliance table required	✅	At the end of every script
+Audit trail tracking	✅	Must log chronological changes
+Output verification table	✅	Must list all files/outputs
+Recovery/fallback logic	✅	Self-healing or retrying logic

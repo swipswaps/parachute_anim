@@ -1,0 +1,58 @@
+review code base, explain and assist user with creating a mission critical, production ready tool
+
+I'll help you review the codebase and assist with creating a production-ready tool. Let me first examine the project structure.
+
+Analyzed
+~/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim
+I see this appears to be a Python project related to parachute animation, possibly part of a larger skydiving simulation system. Let me examine some key files to understand the core functionality.
+
+First, let's look at the core module since it appears to be the largest and likely contains the main functionality:
+
+Analyzed
+
+core.py
+Let me check the API module as well to understand how this system is exposed:
+
+Analyzed
+
+api.py
+Based on my analysis, I understand this is a production system for generating 3D models from parachute videos using photogrammetry. Let me explain the current system and suggest improvements to make it more production-ready:
+
+Current System Overview:
+
+The system processes parachute videos to create 3D models using photogrammetry
+Core components:
+Video segment download and frame extraction
+3D model generation using Meshroom
+REST API interface using FastAPI
+Audit logging system
+To make this system production-ready, here are the critical areas we should address:
+
+Error Handling & Validation
+Current error handling is basic
+No input validation for video URLs or time formats
+No disk space checks before operations
+Security
+System uses sudo commands without proper controls
+Direct file operations without sanitization
+No API authentication/authorization
+Monitoring & Observability
+Basic logging but no structured metrics
+No health checks or system status monitoring
+No performance tracking
+Scalability & Resource Management
+No concurrent job handling
+No resource limits on disk usage or CPU
+No job queuing system
+Data Management
+No cleanup of temporary files
+No data retention policy
+No backup strategy
+Would you like me to help implement improvements in any of these areas? I can:
+
+Add robust error handling and validation
+Implement secure authentication and authorization
+Add monitoring and observability
+Implement job queuing and resource management
+Set up proper data lifecycle management
+Which area would you like to tackle first?

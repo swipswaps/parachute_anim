@@ -1,0 +1,1 @@
+windsurf --disable-gpu --disable-features=UseOzonePlatform --enable-logging --log-level=error --disable-renderer-accessibility --verbose .

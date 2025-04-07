@@ -1,0 +1,520 @@
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/chromium_fix$ chmod +x chromium_dependency_installer_67f1d329-d258-8008-96d1-68cce36f499f_2025_04_06_17_55_00.sh
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/chromium_fix$ sudo ./chromium_dependency_installer_67f1d329-d258-8008-96d1-68cce36f499f_2025_04_06_17_55_00.sh
+[sudo] password for owner: 
+Do you want to use Flatpak Chromium (y/n)? y
+Starting htop for real-time CPU, memory, and process monitoring...
+Starting dstat for real-time disk and network monitoring...
+Launching Chromium (Flatpak) with VAAPI support...
+Failed to initialize (is the Flatpak D-Bus portal working?): Failed to get portal proxy: Failed to execute child process “dbus-launch” (No such file or directory)
+
+06-04 17:56:55|  1   1  95   3   0| 100k   58k|0.30 0.25 0.21
+06-04 17:57:00|  1   0  98   1   0|   0   145k|0.27 0.24 0.21
+06-04 17:57:02|  1   0  99   0   0|   0     0 |0.27 0.24 0.21^CCleaning up...
+./chromium_dependency_installer_67f1d329-d258-8008-96d1-68cce36f499f_2025_04_06_17_55_00.sh: line 111: kill: (24187) - No such process
+Resource monitor stopped.
+Chromium closed. Resource monitor stopped.
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/chromium_fix$ cd ~/Downloads/
+(chromium_venv) owner@owner-macbookpro92:~/Downloads$ mkdir ~/Documents/scripts/AI/swipswaps/cursorAI
+(chromium_venv) owner@owner-macbookpro92:~/Downloads$ cp Cursor-0.48.7-x86_64.AppImage ~/Documents/scripts/AI/swipswaps/cursorAI
+(chromium_venv) owner@owner-macbookpro92:~/Downloads$ cd ~/Documents/scripts/AI/swipswaps/cursorAI(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ ls -la
+total 182196
+drwxr-xr-x  2 owner owner      4096 Apr  6 18:21 .
+drwxr-xr-x 19 owner owner      4096 Apr  6 18:20 ..
+-rw-r--r--  1 owner owner 186557632 Apr  6 18:21 Cursor-0.48.7-x86_64.AppImage
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ chmod +x Cursor-0.48.7-x86_64.AppImage 
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ sudo apt update
+sudo apt install libfuse2
+[sudo] password for owner: 
+Hit:1 http://deb.debian.org/debian bookworm InRelease
+Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]                                    
+Get:3 http://security.debian.org/debian-security bookworm-security InRelease [48.0 kB]                     
+Hit:4 https://packages.microsoft.com/repos/code stable InRelease                                           
+Get:5 http://deb.debian.org/debian bookworm-backports InRelease [59.4 kB]                     
+Hit:6 https://windsurf-stable.codeiumdata.com/wVxQEIWkwPUEAGf3/apt stable InRelease                  
+Hit:7 http://dl.openfoam.org/ubuntu focal InRelease                     
+Get:8 http://deb.debian.org/debian bookworm-backports/main amd64 Packages.diff/Index [63.3 kB]
+Get:9 http://deb.debian.org/debian bookworm-backports/main amd64 Contents (deb).diff/Index [63.6 kB]
+Get:10 http://deb.debian.org/debian bookworm-backports/main all Contents (deb).diff/Index [63.8 kB]
+Get:11 http://deb.debian.org/debian bookworm-backports/main amd64 Packages T-2025-04-06-2004.58-F-2025-04-06-0811.21.pdiff [2,873 B]
+Get:11 http://deb.debian.org/debian bookworm-backports/main amd64 Packages T-2025-04-06-2004.58-F-2025-04-06-0811.21.pdiff [2,873 B]
+Get:12 http://deb.debian.org/debian bookworm-backports/main amd64 Contents (deb) T-2025-04-06-2004.58-F-2025-04-06-0811.21.pdiff [404 B]
+Get:12 http://deb.debian.org/debian bookworm-backports/main amd64 Contents (deb) T-2025-04-06-2004.58-F-2025-04-06-0811.21.pdiff [404 B]
+Get:13 http://deb.debian.org/debian bookworm-backports/main all Contents (deb) T-2025-04-06-0811.21-F-2025-04-06-0811.21.pdiff [825 B]
+Get:13 http://deb.debian.org/debian bookworm-backports/main all Contents (deb) T-2025-04-06-0811.21-F-2025-04-06-0811.21.pdiff [825 B]
+Fetched 358 kB in 6s (61.2 kB/s)                                      
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+2 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+libfuse2 is already the newest version (2.9.9-6+b1).
+libfuse2 set to manually installed.
+The following packages were automatically installed and are no longer required:
+  libdaxctl1 libndctl6 libpmem1
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ ./Cursor-0.48.7-x86_64.AppImage 
+MESA-INTEL: warning: Ivy Bridge Vulkan support is incomplete
+libva error: /usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so init failed
+[main 2025-04-06T22:23:16.010Z] updateURL https://api2.cursor.sh/updates/api/update/linux-x64/cursor/0.48.7/b5477c28c6424f065a2eeab31439bf2b4d31bd46db567d74b11fe4123adfa412/stable
+[main 2025-04-06T22:23:16.011Z] update#setState idle
+[main 2025-04-06T22:23:38.141Z] Extension host with pid 25465 exited with code: 0, signal: unknown.
+[main 2025-04-06T22:23:40.752Z] [UtilityProcess id: 1, type: fileWatcher, pid: 25435]: crashed with code 15 and reason 'killed'
+[main 2025-04-06T22:23:43.750Z] [storage main] detected slow close() operation: Time: 3027ms, DB size: 184320b, Large Keys: iconThemeData:96802, colorThemeData:41334, src.vs.platform.reactivestorage.browser.reactiveStorageServiceImpl.persistentStorage.applicationUser:6616, __$__targetStorageMarker:1552, chat.participantNameRegistry:1315
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ sudo ./Cursor-0.48.7-x86_64.AppImage 
+[0406/182349.614840:FATAL:electron_main_delegate.cc(288)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+Trace/breakpoint trap
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ ./Cursor-0.48.7-x86_64.AppImage 
+MESA-INTEL: warning: Ivy Bridge Vulkan support is incomplete
+libva error: /usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so init failed
+[main 2025-04-06T22:28:41.718Z] updateURL https://api2.cursor.sh/updates/api/update/linux-x64/cursor/0.48.7/b5477c28c6424f065a2eeab31439bf2b4d31bd46db567d74b11fe4123adfa412/stable
+[main 2025-04-06T22:28:41.719Z] update#setState idle
+[main 2025-04-06T22:29:11.721Z] update#setState checking for updates
+[main 2025-04-06T22:29:12.099Z] update#setState idle
+[main 2025-04-06T22:30:25.149Z] Extension host with pid 27243 exited with code: 0, signal: unknown.
+[main 2025-04-06T22:30:25.616Z] [UtilityProcess id: 1, type: fileWatcher, pid: 27224]: crashed with code 15 and reason 'killed'
+[27034:0406/184133.264670:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 1 times!
+[main 2025-04-06T22:46:17.465Z] Extension host with pid 27628 exited with code: 0, signal: unknown.
+[main 2025-04-06T22:46:17.807Z] [UtilityProcess id: 1, type: fileWatcher, pid: 27618]: crashed with code 15 and reason 'killed'
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ ./Cursor-0.48.7-x86_64.AppImage 
+MESA-INTEL: warning: Ivy Bridge Vulkan support is incomplete
+libva error: /usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so init failed
+[main 2025-04-06T22:46:25.985Z] updateURL https://api2.cursor.sh/updates/api/update/linux-x64/cursor/0.48.7/b5477c28c6424f065a2eeab31439bf2b4d31bd46db567d74b11fe4123adfa412/stable
+[main 2025-04-06T22:46:25.995Z] update#setState idle
+[main 2025-04-06T22:46:29.035Z] vscode-file: Refused to load resource /tmp/.mount_CursorLeCDZ8/usr/share/cursor/resources/app/extensions/theme-seti/icons/seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/tmp/.mount_CursorLeCDZ8/usr/share/cursor/resources/app/extensions/theme-seti/icons/seti.woff)
+[main 2025-04-06T22:46:55.996Z] update#setState checking for updates
+[main 2025-04-06T22:46:56.061Z] update#setState idle
+[main 2025-04-06T22:47:10.782Z] Extension host with pid 28514 exited with code: 0, signal: unknown.
+[main 2025-04-06T22:47:11.209Z] [UtilityProcess id: 1, type: fileWatcher, pid: 28532]: crashed with code 15 and reason 'killed'
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ rm -rf Cursor-0.48.7-x86_64.AppImage 
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ cp ~/Downloads/Cursor-0.48.7-x86_64.AppImage ~/Documents/scripts/AI/swipswaps/cursorAI
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ chmod +x Cursor-0.48.7-x86_64.AppImage 
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ ./Cursor-0.48.7-x86_64.AppImage 
+MESA-INTEL: warning: Ivy Bridge Vulkan support is incomplete
+libva error: /usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so init failed
+[main 2025-04-06T22:48:06.562Z] updateURL https://api2.cursor.sh/updates/api/update/linux-x64/cursor/0.48.7/b5477c28c6424f065a2eeab31439bf2b4d31bd46db567d74b11fe4123adfa412/stable
+[main 2025-04-06T22:48:06.563Z] update#setState idle
+[main 2025-04-06T22:48:09.640Z] vscode-file: Refused to load resource /tmp/.mount_Cursor7IH98L/usr/share/cursor/resources/app/extensions/theme-seti/icons/seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/tmp/.mount_Cursor7IH98L/usr/share/cursor/resources/app/extensions/theme-seti/icons/seti.woff)
+[main 2025-04-06T22:48:36.565Z] update#setState checking for updates
+[main 2025-04-06T22:48:36.626Z] update#setState idle
+[main 2025-04-06T22:51:50.885Z] Extension host with pid 29359 exited with code: 0, signal: unknown.
+[main 2025-04-06T22:51:51.334Z] [UtilityProcess id: 1, type: fileWatcher, pid: 29372]: crashed with code 15 and reason 'killed'
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ cd ~/.config/cursor
+bash: cd: /home/owner/.config/cursor: No such file or directory
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ sudo updatedb && locate cursor |grep .config
+[sudo] password for owner: 
+
+/home/owner/.config/Cursor/User/workspaceStorage/d601aa247dcfebfcbb1f0bda0f2e8fab/anysphere.cursor-retrieval
+/home/owner/.config/Cursor/User/workspaceStorage/d601aa247dcfebfcbb1f0bda0f2e8fab/anysphere.cursor-retrieval/embeddable_files.txt
+/home/owner/.config/Cursor/User/workspaceStorage/d601aa247dcfebfcbb1f0bda0f2e8fab/anysphere.cursor-retrieval/high_level_folder_description.txt
+/home/owner/.config/Cursor/logs/20250406T182315/window1/exthost/anysphere.cursor-always-local
+/home/owner/.config/Cursor/logs/20250406T182315/window1/exthost/anysphere.cursor-retrieval
+/home/owner/.config/Cursor/logs/20250406T182315/window1/exthost/anysphere.cursor-always-local/Cursor Always Local.log
+/home/owner/.config/Cursor/logs/20250406T182315/window1/exthost/anysphere.cursor-always-local/Cursor MCP.log
+/home/owner/.config/Cursor/logs/20250406T182315/window1/exthost/anysphere.cursor-always-local/Cursor Tab.log
+/home/owner/.config/Cursor/logs/20250406T182315/window1/exthost/anysphere.cursor-always-local/Filesync.log
+/home/owner/.config/Cursor/logs/20250406T182315/window1/exthost/anysphere.cursor-retrieval/Cursor Git Graph.log
+/home/owner/.config/Cursor/logs/20250406T182315/window1/exthost/anysphere.cursor-retrieval/Cursor Indexing & Retrieval.log
+/home/owner/.config/Cursor/logs/20250406T182315/window1/exthost/anysphere.cursor-retrieval/Cursor Puppeteer logs.log
+/home/owner/.config/Cursor/logs/20250406T182841/window1/exthost/anysphere.cursor-always-local
+/home/owner/.config/Cursor/logs/20250406T182841/window1/exthost/anysphere.cursor-retrieval
+/home/owner/.config/Cursor/logs/20250406T182841/window1/exthost/anysphere.cursor-always-local/Cursor Always Local.log
+/home/owner/.config/Cursor/logs/20250406T182841/window1/exthost/anysphere.cursor-always-local/Cursor MCP.log
+/home/owner/.config/Cursor/logs/20250406T182841/window1/exthost/anysphere.cursor-always-local/Cursor Tab.log
+/home/owner/.config/Cursor/logs/20250406T182841/window1/exthost/anysphere.cursor-always-local/Filesync.log
+/home/owner/.config/Cursor/logs/20250406T182841/window1/exthost/anysphere.cursor-retrieval/Cursor Git Graph.log
+/home/owner/.config/Cursor/logs/20250406T182841/window1/exthost/anysphere.cursor-retrieval/Cursor Indexing & Retrieval.log
+/home/owner/.config/Cursor/logs/20250406T182841/window1/exthost/anysphere.cursor-retrieval/Cursor Puppeteer logs.log
+/home/owner/.config/Cursor/logs/20250406T184625/window1/exthost/anysphere.cursor-always-local
+/home/owner/.config/Cursor/logs/20250406T184625/window1/exthost/anysphere.cursor-retrieval
+/home/owner/.config/Cursor/logs/20250406T184625/window1/exthost/anysphere.cursor-always-local/Cursor Always Local.log
+/home/owner/.config/Cursor/logs/20250406T184625/window1/exthost/anysphere.cursor-always-local/Cursor MCP.log
+/home/owner/.config/Cursor/logs/20250406T184625/window1/exthost/anysphere.cursor-always-local/Cursor Tab.log
+/home/owner/.config/Cursor/logs/20250406T184625/window1/exthost/anysphere.cursor-always-local/Filesync.log
+/home/owner/.config/Cursor/logs/20250406T184625/window1/exthost/anysphere.cursor-retrieval/Cursor Git Graph.log
+/home/owner/.config/Cursor/logs/20250406T184625/window1/exthost/anysphere.cursor-retrieval/Cursor Indexing & Retrieval.log
+/home/owner/.config/Cursor/logs/20250406T184625/window1/exthost/anysphere.cursor-retrieval/Cursor Puppeteer logs.log
+/home/owner/.config/Cursor/logs/20250406T184806/window1/exthost/anysphere.cursor-always-local
+/home/owner/.config/Cursor/logs/20250406T184806/window1/exthost/anysphere.cursor-retrieval
+/home/owner/.config/Cursor/logs/20250406T184806/window1/exthost/anysphere.cursor-always-local/Cursor Always Local.log
+/home/owner/.config/Cursor/logs/20250406T184806/window1/exthost/anysphere.cursor-always-local/Cursor MCP.log
+/home/owner/.config/Cursor/logs/20250406T184806/window1/exthost/anysphere.cursor-always-local/Cursor Tab.log
+/home/owner/.config/Cursor/logs/20250406T184806/window1/exthost/anysphere.cursor-always-local/Filesync.log
+/home/owner/.config/Cursor/logs/20250406T184806/window1/exthost/anysphere.cursor-retrieval/Cursor Git Graph.log
+/home/owner/.config/Cursor/logs/20250406T184806/window1/exthost/anysphere.cursor-retrieval/Cursor Indexing & Retrieval.log
+/home/owner/.config/Cursor/logs/20250406T184806/window1/exthost/anysphere.cursor-retrieval/Cursor Puppeteer logs.log
+/usr/share/config.kcfg/cursorthemesettings.kcfg
+/usr/share/icons/KDE_Classic/cursors/xcursorconfig
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ mkdir txt
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ xclip -sel clip -o > txt/67f2fabd-22fc-8008-8ea9-56cc023c0b30_2025_04_06_18_56_00.txt
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ ls ~/.config/cursor
+ls: cannot access '/home/owner/.config/cursor': No such file or directory
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ ls /home/owner/.config/cursor
+ls: cannot access '/home/owner/.config/cursor': No such file or directory
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ ls /home/owner/.config/Cursor
+ Backups              Cookies-journal     'Local Storage'             'Shared Dictionary'
+ blob_storage         Crashpad             logs                        SharedStorage
+ Cache                DawnGraphiteCache    machineid                  'Trust Tokens'
+ CachedData           DawnWebGPUCache     'Network Persistent State'  'Trust Tokens-journal'
+ CachedProfilesData   Dictionaries         Preferences                 User
+'Code Cache'          GPUCache             sentry
+ Cookies              languagepacks.json  'Session Storage'
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ ls ~/.config/Cursor Backups              Cookies-journal     'Local Storage'             'Shared Dictionary'
+ blob_storage         Crashpad             logs                        SharedStorage
+ Cache                DawnGraphiteCache    machineid                  'Trust Tokens'
+ CachedData           DawnWebGPUCache     'Network Persistent State'  'Trust Tokens-journal'
+ CachedProfilesData   Dictionaries         Preferences                 User
+'Code Cache'          GPUCache             sentry
+ Cookies              languagepacks.json  'Session Storage'
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ rm -r ~/.config/Cursor
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ ./Cursor-0.48.7-x86_64.AppImage 
+[main 2025-04-06T23:03:52.911Z] updateURL https://api2.cursor.sh/updates/api/update/linux-x64/cursor/0.48.7/b5477c28c6424f065a2eeab31439bf2b4d31bd46db567d74b11fe4123adfa412/stable
+[main 2025-04-06T23:03:52.913Z] update#setState idle
+MESA-INTEL: warning: Ivy Bridge Vulkan support is incomplete
+libva error: /usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so init failed
+[main 2025-04-06T23:04:22.916Z] update#setState checking for updates
+[main 2025-04-06T23:04:22.977Z] update#setState idle
+[main 2025-04-06T23:05:34.752Z] Extension host with pid 30993 exited with code: 0, signal: unknown.
+[30724:0406/192733.345295:ERROR:CONSOLE(1)] "Request Autofill.enable failed. {"code":-32601,"message":"'Autofill.enable' wasn't found"}", source: devtools://devtools/bundled/core/protocol_client/protocol_client.js (1)
+[30724:0406/192733.347082:ERROR:CONSOLE(1)] "Request Autofill.setAddresses failed. {"code":-32601,"message":"'Autofill.setAddresses' wasn't found"}", source: devtools://devtools/bundled/core/protocol_client/protocol_client.js (1)
+[main 2025-04-06T23:55:18.091Z] Extension host with pid 31472 exited with code: 0, signal: unknown.
+[main 2025-04-06T23:55:19.094Z] Extension host with pid 31472 still exists, forcefully killing it...
+(chromium_venv) owner@owner-macbookpro92:~/Documents/scripts/AI/swipswaps/cursorAI$ ./Cursor-0.48.7-x86_64.AppImage --enable-logging --v=1
+[1:0406/195534.269340:INFO:cpu_info.cc(53)] Available number of cores: 4
+[35045:0406/195534.269320:INFO:cpu_info.cc(53)] Available number of cores: 4
+[35045:0406/195534.371401:VERBOSE1:zygote_main_linux.cc(201)] ZygoteMain: initializing 0 fork delegates
+[1:0406/195534.372616:VERBOSE1:zygote_main_linux.cc(201)] ZygoteMain: initializing 0 fork delegates
+[35030:0406/195534.776242:VERBOSE1:bus.cc(916)] Method call: message_type: MESSAGE_METHOD_CALL
+interface: org.freedesktop.DBus
+member: GetNameOwner
+signature: s
+
+string "org.freedesktop.login1"
+
+[35030:0406/195539.050745:VERBOSE1:key_storage_util_linux.cc(51)] Password storage detected desktop environment: XFCE
+[35030:0406/195539.052855:VERBOSE1:bus.cc(916)] Method call: message_type: MESSAGE_METHOD_CALL
+interface: org.freedesktop.DBus
+member: GetNameOwner
+signature: s
+
+string "org.chromium.bluetooth.Manager"
+
+[35030:0406/195539.278386:VERBOSE1:device_event_log_impl.cc(203)] [19:55:39.191] Display: EVENT: x11_display_manager.cc:110 Displays updated, count: 1
+[35030:0406/195539.278557:VERBOSE1:device_event_log_impl.cc(203)] [19:55:39.278] Display: EVENT: x11_display_manager.cc:112 Display[1706442046308417] bounds=[0,0 1280x800], workarea=[0,27 1280x773], scale=1, rotation=0, panel_rotation=0 internal detected
+[35030:0406/195539.340352:VERBOSE1:pref_proxy_config_tracker_impl.cc(199)] 0x2f6400066680: set chrome proxy config service to 0x2f64000e4ac0
+[35030:0406/195539.364763:VERBOSE1:bus.cc(916)] Method call: message_type: MESSAGE_METHOD_CALL
+interface: org.freedesktop.DBus
+member: GetNameOwner
+signature: s
+
+string "org.freedesktop.portal.Desktop"
+
+[35030:0406/195539.367193:VERBOSE1:select_file_dialog_linux_portal.cc(314)] File chooser portal available version: 3
+[35030:0406/195539.434926:VERBOSE1:select_file_dialog_linux_portal.cc(319)] File chooser portal expected version: 4
+[35030:0406/195539.434955:VERBOSE1:select_file_dialog_linux_portal.cc(321)] File chooser portal available: no
+[35030:0406/195539.871418:VERBOSE1:media_stream_manager.cc(1517)] MSM::InitializeMaybeAsync([this=0x2f6400093080])
+[35030:0406/195539.889503:VERBOSE1:media_stream_manager.cc(1517)] MDM::MediaDevicesManager()
+[35030:0406/195539.889607:VERBOSE1:media_stream_manager.cc(1517)] MSM::MediaStreamManager([this=0x2f6400093080]))
+[35030:0406/195540.408645:VERBOSE1:first_party_sets_handler_impl_instance.cc(277)] Empty path. Failed initializing First-Party Sets database.
+[35030:0406/195540.437304:VERBOSE1:bus.cc(916)] Method call: message_type: MESSAGE_METHOD_CALL
+interface: org.freedesktop.DBus
+member: GetNameOwner
+signature: s
+
+string "org.bluez"
+
+[35030:0406/195540.437565:VERBOSE1:bus.cc(916)] Method call: message_type: MESSAGE_METHOD_CALL
+interface: org.freedesktop.DBus
+member: GetNameOwner
+signature: s
+
+string "org.bluez"
+
+[35030:0406/195540.513385:VERBOSE1:bus.cc(699)] Filter function already exists: 1 with associated data: 0x2f6400edf640
+[35030:0406/195540.513433:VERBOSE1:bus.cc(916)] Method call: message_type: MESSAGE_METHOD_CALL
+interface: org.freedesktop.DBus
+member: GetNameOwner
+signature: s
+
+string "org.bluez"
+
+[35030:0406/195540.513966:VERBOSE1:bus.cc(699)] Filter function already exists: 1 with associated data: 0x2f6400edf640
+[35030:0406/195540.514002:VERBOSE1:bus.cc(916)] Method call: message_type: MESSAGE_METHOD_CALL
+interface: org.freedesktop.DBus
+member: GetNameOwner
+signature: s
+
+string "org.bluez"
+
+Warning: 'enable-logging' is not in the list of known options, but still passed to Electron/Chromium.
+[35030:0406/195541.326183:VERBOSE1:pref_proxy_config_tracker_impl.cc(199)] 0x2f6400070340: set chrome proxy config service to 0x2f64000e8200
+[35030:0406/195541.435135:VERBOSE1:file_util_posix.cc(310)] Cannot stat "/home/owner/.config/Cursor/databases": No such file or directory (2)
+[35030:0406/195541.604135:VERBOSE1:device_event_log_impl.cc(203)] [19:55:41.603] Bluetooth: EVENT: bluetooth_api.cc:82 BluetoothAPI: 0x2f640007c640
+[35030:0406/195542.511428:VERBOSE1:bus.cc(916)] Method call: message_type: MESSAGE_METHOD_CALL
+interface: org.freedesktop.DBus
+member: GetNameOwner
+signature: s
+
+string "org.freedesktop.login1"
+
+[35030:0406/195542.511774:VERBOSE1:bus.cc(699)] Filter function already exists: 1 with associated data: 0x2f640136f2c0
+[35030:0406/195542.511801:VERBOSE1:bus.cc(916)] Method call: message_type: MESSAGE_METHOD_CALL
+interface: org.freedesktop.DBus
+member: GetNameOwner
+signature: s
+
+string "org.freedesktop.login1"
+
+[35030:0406/195542.511973:VERBOSE1:bus.cc(699)] Filter function already exists: 1 with associated data: 0x2f640136f2c0
+[35030:0406/195542.511996:VERBOSE1:bus.cc(916)] Method call: message_type: MESSAGE_METHOD_CALL
+interface: org.freedesktop.DBus
+member: GetNameOwner
+signature: s
+
+string "org.freedesktop.login1"
+
+[main 2025-04-06T23:55:43.787Z] updateURL https://api2.cursor.sh/updates/api/update/linux-x64/cursor/0.48.7/b5477c28c6424f065a2eeab31439bf2b4d31bd46db567d74b11fe4123adfa412/stable
+[main 2025-04-06T23:55:43.788Z] update#setState idle
+[35030:0406/195543.795095:VERBOSE1:bus.cc(720)] Requested to remove an unknown filter function: 1 with associated data: 0x2f640183c540
+[35105:0406/195543.806505:VERBOSE1:sandbox_linux.cc(93)] Activated seccomp-bpf sandbox for process type: renderer.
+MESA-INTEL: warning: Ivy Bridge Vulkan support is incomplete
+[35030:0406/195544.443406:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html
+libva error: /usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so init failed
+[35081:0406/195547.132477:WARNING:sandbox_linux.cc(430)] InitializeSandbox() called with multiple threads in process gpu-process.
+[35081:0406/195547.133962:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[35105:0406/195547.718852:VERBOSE1:script_context.cc(150)] Created context:
+  extension id:           (none)
+  frame:                  0x182c0014e9d8
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[35105:0406/195547.719836:VERBOSE1:script_context.cc(150)] Created context:
+  extension id:           (none)
+  frame:                  (nil)
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[35105:0406/195547.720116:VERBOSE1:dispatcher.cc(543)] Num tracked contexts: 1
+[35105:0406/195547.740927:VERBOSE1:script_context.cc(150)] Created context:
+  extension id:           (none)
+  frame:                  0x182c0014e9d8
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[35105:0406/195547.741118:VERBOSE1:script_context.cc(150)] Created context:
+  extension id:           (none)
+  frame:                  (nil)
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[35105:0406/195547.741352:VERBOSE1:dispatcher.cc(543)] Num tracked contexts: 2
+[35030:0406/195547.960039:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.css
+[35030:0406/195547.975908:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/code/electron-sandbox/workbench/workbench.js
+[35030:0406/195548.080057:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js
+[35030:0406/195550.759402:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/media/logo.png
+[main 2025-04-06T23:55:50.847Z] vscode-file: Refused to load resource /tmp/.mount_CursorkDtBfs/usr/share/cursor/resources/app/extensions/theme-seti/icons/seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/tmp/.mount_CursorkDtBfs/usr/share/cursor/resources/app/extensions/theme-seti/icons/seti.woff)
+[35030:0406/195551.052737:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/browser/parts/editor/media/logo.png
+[35030:0406/195551.325026:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/media/codicon.ttf
+[35030:0406/195551.703347:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/node_modules/@xterm/xterm/lib/xterm.js
+[35030:0406/195552.707373:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/node_modules/@xterm/addon-unicode11/lib/addon-unicode11.js
+[35030:0406/195552.720539:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/node_modules/@xterm/addon-clipboard/lib/addon-clipboard.js
+[35030:0406/195552.963014:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/node_modules/@xterm/addon-webgl/lib/addon-webgl.js
+[35030:0406/195553.220618:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/editor/common/services/editorSimpleWorkerMain.js
+[35030:0406/195555.994554:INFO:CONSOLE(591)] "[CursorRules] Rules directory does not exist", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195555.996892:INFO:CONSOLE(591)] "[CursorRules] Rules directory does not exist", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195558.547173:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/node_modules/vscode-textmate/release/main.js
+[35030:0406/195558.555389:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/node_modules/vscode-oniguruma/release/main.js
+[35030:0406/195558.556266:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/node_modules/vscode-oniguruma/release/onig.wasm
+[35030:0406/195558.944385:INFO:CONSOLE(2371)] "%c[Extension Host] %c(node:35268) ExperimentalWarning: Use `importAttributes` instead of `importAssertions`
+(Use `exe --trace-warnings ...` to show where the warning was created) color: blue color: ", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (2371)
+[35030:0406/195559.051441:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/extensions/theme-seti/icons/seti.woff
+[35030:0406/195559.228098:INFO:CONSOLE(4922)] "Extension Host", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (4922)
+[35030:0406/195559.228150:INFO:CONSOLE(4922)] "console.groupEnd", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (4922)
+[35030:0406/195559.707534:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/services/textMate/browser/backgroundTokenization/worker/textMateTokenizationWorker.workerMain.js
+[35030:0406/195559.922288:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/node_modules/vscode-textmate/release/main.js
+[35030:0406/195559.944146:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/node_modules/vscode-oniguruma/release/main.js
+[35030:0406/195559.951950:VERBOSE1:file_url_loader_factory.cc(476)] FileURLLoader::Start: file:///tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/node_modules/vscode-oniguruma/release/onig.wasm
+[35030:0406/195605.770414:INFO:CONSOLE(4940)] "Error refreshing background composers ConnectError: [unauthenticated] Error", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (4940)
+[main 2025-04-06T23:56:13.791Z] update#setState checking for updates
+[main 2025-04-06T23:56:13.919Z] update#setState idle
+[35030:0406/195624.739818:VERBOSE1:key_storage_util_linux.cc(51)] Password storage detected desktop environment: XFCE
+[35030:0406/195624.739990:VERBOSE1:key_storage_linux.cc(118)] Selected backend for OSCrypt: GNOME_LIBSECRET
+[35030:0406/195625.331301:VERBOSE1:key_storage_linux.cc(165)] OSCrypt using Libsecret as backend.
+[35030:0406/195625.351591:VERBOSE1:key_storage_libsecret.cc(53)] Libsecret key created: 2025-04-06 22:31:06.000000 UTC
+[35030:0406/195625.351619:VERBOSE1:key_storage_libsecret.cc(54)] Libsecret key last modified: 2025-04-06 22:31:07.000000 UTC
+[35030:0406/195625.351632:WARNING:key_storage_libsecret.cc(55)] the encryption key has been modified since it was created.
+[35030:0406/195647.404543:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:8077", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195647.407282:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195647.407762:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:d81f", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195647.410653:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195647.410770:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:37ba", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195647.414244:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195647.414315:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:1cb6", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195647.416240:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195648.215407:INFO:CONSOLE(2008)] "[composer.submitChat] Time between function start and adding human message: 166ms", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (2008)
+[35030:0406/195650.624708:INFO:CONSOLE(175)] "monospace assumptions have been violated, therefore disabling monospace optimizations!", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (175)
+[35030:0406/195651.057264:INFO:CONSOLE(175)] "monospace assumptions have been violated, therefore disabling monospace optimizations!", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (175)
+[35030:0406/195651.058377:INFO:CONSOLE(175)] "monospace assumptions have been violated, therefore disabling monospace optimizations!", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (175)
+[35030:0406/195651.122287:INFO:CONSOLE(175)] "monospace assumptions have been violated, therefore disabling monospace optimizations!", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (175)
+[35030:0406/195651.246612:INFO:CONSOLE(175)] "monospace assumptions have been violated, therefore disabling monospace optimizations!", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (175)
+[35030:0406/195651.455222:INFO:CONSOLE(175)] "monospace assumptions have been violated, therefore disabling monospace optimizations!", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (175)
+[35030:0406/195651.465672:INFO:CONSOLE(175)] "monospace assumptions have been violated, therefore disabling monospace optimizations!", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (175)
+[35030:0406/195651.630222:INFO:CONSOLE(175)] "monospace assumptions have been violated, therefore disabling monospace optimizations!", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (175)
+[35030:0406/195651.671432:INFO:CONSOLE(175)] "monospace assumptions have been violated, therefore disabling monospace optimizations!", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (175)
+[35030:0406/195654.774568:INFO:CONSOLE(591)] "[composer] updating checkpoint checkpointId:532a:8077", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.774647:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:8077", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.774976:INFO:CONSOLE(2008)] "[composer.submitChat] Time between function start and handling context / checkpoints: 6725ms", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (2008)
+[35030:0406/195654.793528:INFO:CONSOLE(2008)] "[composer.submitChat] getPerMessageLinterErrors took 3ms", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (2008)
+[35030:0406/195654.794866:INFO:CONSOLE(2008)] "[composer.submitChat] getCodeChunks took 3ms", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (2008)
+[35030:0406/195654.795419:INFO:CONSOLE(2008)] "[composer.submitChat] getRelevantFiles took 2ms", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (2008)
+[35030:0406/195654.805614:INFO:CONSOLE(2008)] "[composer.submitChat] getEnvironmentInfo took 13ms", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (2008)
+[35030:0406/195654.823706:INFO:CONSOLE(2008)] "[composer.submitChat] getHumanChanges took 29ms", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (2008)
+[35030:0406/195654.823786:INFO:CONSOLE(2008)] "[composer.submitChat] Time taken to process context: 32ms", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (2008)
+[35030:0406/195654.824625:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:6dc8", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.825741:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:4dd0", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.826323:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:1da3", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.827769:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:a8c2", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.828644:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:edc7", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.869574:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.871741:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.871816:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:edc7", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.872804:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.873636:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.873867:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:4dd0", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.874703:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.875059:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:d171", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.875953:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.876380:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:44b2", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195654.891607:INFO:CONSOLE(2008)] "[composer.submitChat] getRecentlyViewedFileInfo took 98ms", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (2008)
+[35030:0406/195655.618506:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195655.620285:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195655.620378:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:d171", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195655.622081:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195655.622162:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:1d2e", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195655.625889:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195655.626016:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:6f71", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.462055:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.462146:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:1d2e", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.463170:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.463260:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:d037", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.464369:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.464429:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:a8c2", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.464996:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.465107:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:d037", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.465867:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.465934:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:c4f7", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.466826:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.466918:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:edc7", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.468968:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.469380:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:c4f7", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.472015:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.472231:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:fa0a", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.473873:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.482647:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.482774:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:fa0a", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.484274:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.484520:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:b379", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.487404:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.487599:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:b379", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.495802:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.495878:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:6a57", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.496583:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.496649:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:6a57", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.498564:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.498685:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:e980", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.499093:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.499171:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:e980", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.501217:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.501460:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:9647", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.504635:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.507759:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:9647", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.515421:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.515512:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:0f6f", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.516773:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.519957:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:0f6f", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.530433:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.530551:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:1da3", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.531879:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.531958:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:1da3", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.536581:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.539912:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:44b2", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.547685:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.547767:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:44b2", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.548727:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.548809:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:6f71", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.550547:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.552604:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:6f71", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.553619:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.553713:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:a8c2", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.561778:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.561854:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:a8c2", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.562870:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.562941:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:edc7", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.563786:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.563851:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:edc7", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.564680:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.565248:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.591517:INFO:CONSOLE(591)] "[CursorRules] Rules directory does not exist", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.597049:INFO:CONSOLE(591)] "[CursorRules] Rules directory does not exist", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.597130:INFO:CONSOLE(591)] "[CursorRules] Rules directory does not exist", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.597469:INFO:CONSOLE(591)] "[CursorRules] Rules directory does not exist", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.598211:INFO:CONSOLE(591)] "[CursorRules] Rules directory does not exist", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.598917:INFO:CONSOLE(591)] "[CursorRules] Rules directory does not exist", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.599465:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:1da3", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.605372:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:edc7", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.605972:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.606819:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:2703", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.614728:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.614839:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:8844", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.615684:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.628665:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.630173:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:1da3", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.632458:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.632596:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:df6a", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.645859:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.652968:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:1da3", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.664845:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.664948:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:e489", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195656.671118:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.094373:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:1da3", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.100193:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.101142:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:9447", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.106643:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.124670:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:1da3", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.134783:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.135581:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:0145", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.145696:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.161897:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:1da3", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.177575:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.177698:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:b810", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.180678:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.209129:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:1da3", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.212073:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.212145:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:8e0f", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.227039:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.231694:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:1da3", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.243316:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.243889:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:62fa", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.247936:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.261484:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:1da3", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.271839:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.272110:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:d6d4", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.282902:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.294655:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:1da3", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.299209:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.299627:INFO:CONSOLE(591)] "[composer] retrieving checkpoint checkpointId:532a:9224", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.309823:INFO:CONSOLE(591)] "[composer] retrieved checkpoint [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (591)
+[35030:0406/195657.310664:INFO:CONSOLE(2008)] "[composer] Time taken to process extra context: 742ms", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (2008)
+[35030:0406/195657.335138:INFO:CONSOLE(613)] "[Explicit context] took 7.9000000059604645ms", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (613)
+[35030:0406/195657.336361:INFO:CONSOLE(2008)] "[composer] composerChatRequest [object Object]", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (2008)
+[35030:0406/195657.423024:INFO:CONSOLE(2008)] "[composer] Client-side ttft: 9373ms", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (2008)
+[35030:0406/195657.423241:INFO:CONSOLE(2008)] "[composer.submitChat] Last leg time taken: 112ms", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (2008)
+[35030:0406/195705.376067:INFO:CONSOLE(4407)] "Timed out getting tasks from  npm", source: vscode-file://vscode-app/tmp/.mount_CursoraHufI2/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js (4407)
+
+

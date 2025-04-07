@@ -1,0 +1,82 @@
+# File: /usr/local/lib/parachute/core.py
+
+import subprocess
+import sys
+import os
+from pathlib import Path
+from datetime import datetime
+
+# === Configurable constants ===
+VIDEO_URL = "https://www.youtube.com/watch?v=XbfNWbMvSXk"
+START_TIME = "00:00:19"
+DURATION = 5
+FPS = 10
+
+WORK_DIR = Path.home() / "parachute_3d_project"
+FRAMES_DIR = WORK_DIR / "frames"
+VIDEO_SEGMENT = WORK_DIR / "video_segment.mp4"
+OUTPUT_DIR = WORK_DIR / "meshroom_output"
+EXPORT_DIR = Path.home() / "3d_exports"
+AUDIT_LOG = WORK_DIR / "audit.log"
+MESHROOM_BIN = "/opt/meshroom/meshroom_batch"
+
+REQUIRED_APT = ["ffmpeg"]
+REQUIRED_PIP = ["yt-dlp"]
+
+EXPORT_EXTS = [".obj", ".stl", ".glb", ".ply"]
+
+# === Logging ===
+def log(msg):
+    print(f"[+] {msg}")
+    with open(AUDIT_LOG, "a") as f:
+        f.write(f"{datetime.now().isoformat()} :: {msg}\n")
+
+# === Commands ===
+def run_cmd(cmd, shell=False):
+    log(f"Running: {' '.join(cmd) if isinstance(cmd, list) else cmd}")
+    subprocess.run(cmd, check=True, shell=shell)
+
+def install_dependencies():
+    for pkg in REQUIRED_APT:
+        subprocess.run(["sudo", "apt", "install", "-y", pkg], check=False)
+    for pkg in REQUIRED_PIP:
+        subprocess.run([sys.executable, "-m", "pip", "install", pkg], check=False)
+
+def download_video_segment():
+    direct_url = subprocess.check_output(["yt-dlp", "-g", VIDEO_URL]).decode().strip().split("\n")[0]
+    run_cmd(["ffmpeg", "-ss", START_TIME, "-i", direct_url, "-t", str(DURATION),
+             "-c:v", "libx264", "-c:a", "aac", "-y", str(VIDEO_SEGMENT)])
+
+def extract_frames():
+    run_cmd(["ffmpeg", "-i", str(VIDEO_SEGMENT),
+             "-vf", f"fps={FPS}", "-qscale:v", "2", str(FRAMES_DIR / "frame_%04d.jpg")])
+
+def launch_meshroom():
+    if not Path(MESHROOM_BIN).exists():
+        log(f"[ERROR] Meshroom binary not found: {MESHROOM_BIN}")
+        raise FileNotFoundError("Meshroom binary not found")
+    run_cmd([MESHROOM_BIN, "--input", str(FRAMES_DIR), "--output", str(OUTPUT_DIR)])
+
+def copy_exports():
+    EXPORT_DIR.mkdir(exist_ok=True)
+    for ext in EXPORT_EXTS:
+        for file in OUTPUT_DIR.rglob(f"*{ext}"):
+            target = EXPORT_DIR / f"{datetime.now().strftime('%Y%m%d_%H%M%S')}_{file.name}"
+            shutil.copy2(file, target)
+            run_cmd(["xclip", "-selection", "clipboard"], shell=True)
+            log(f"Exported: {target}")
+
+def pipeline():
+    WORK_DIR.mkdir(exist_ok=True)
+    FRAMES_DIR.mkdir(exist_ok=True)
+    OUTPUT_DIR.mkdir(exist_ok=True)
+    AUDIT_LOG.touch(exist_ok=True)
+    
+    install_dependencies()
+    download_video_segment()
+    extract_frames()
+    launch_meshroom()
+    copy_exports()
+    
+    log("🎉 Pipeline completed.")
+    return True

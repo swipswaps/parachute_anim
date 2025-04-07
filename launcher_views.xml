@@ -1,0 +1,49 @@
+<odoo>
+  <record id="view_launcher_form" model="ir.ui.view">
+    <field name="name">parachute.launcher.form</field>
+    <field name="model">parachute.launcher</field>
+    <field name="arch" type="xml">
+      <form string="Parachute 3D Launcher">
+        <group>
+          <field name="name"/>
+          <field name="video_url"/>
+          <field name="start_time"/>
+          <field name="duration"/>
+          <field name="status"/>
+        </group>
+        <notebook>
+          <page string="Log">
+            <field name="audit_log" widget="text"/>
+          </page>
+          <page string="Exports">
+            <field name="export_path"/>
+          </page>
+        </notebook>
+        <footer>
+          <button name="run_pipeline" type="object" class="btn-primary" string="Run Pipeline"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_launcher_tree" model="ir.ui.view">
+    <field name="name">parachute.launcher.tree</field>
+    <field name="model">parachute.launcher</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name"/>
+        <field name="status"/>
+        <field name="export_path"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="action_launcher" model="ir.actions.act_window">
+    <field name="name">Parachute 3D Launcher</field>
+    <field name="res_model">parachute.launcher</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <menuitem id="menu_launcher_root" name="Parachute"/>
+  <menuitem id="menu_launcher" name="3D Launcher" parent="menu_launcher_root" action="action_launcher"/>
+</odoo>
