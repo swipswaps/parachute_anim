@@ -23,7 +23,7 @@ A robust API service for processing video segments into 3D models using photogra
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/parachute_3d_pipeline.git
+git clone https://github.com/swipswaps/parachute_3d_pipeline.git
 cd parachute_3d_pipeline
 ```
 
