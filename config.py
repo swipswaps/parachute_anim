@@ -26,8 +26,10 @@ class Settings(BaseSettings):
     # Security
     SECRET_KEY: str = "your-secret-key-here"  # Change in production
     ALGORITHM: str = "HS256"
+    ADMIN_USERNAME: str = "admin"
+    ADMIN_PASSWORD: str = "admin"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
-    
+
     # Processing settings
     DEFAULT_FPS: int = 10
     MAX_DURATION: int = 300  # 5 minutes

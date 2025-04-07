@@ -39,10 +39,26 @@ class Token(BaseModel):
 class TokenData(BaseModel):
     username: Optional[str] = None
 
+from pydantic import validator
+
 class JobRequest(BaseModel):
     video_url: HttpUrl
     start_time: str
     duration: int
+
+    @validator("start_time")
+    def validate_start_time(cls, value):
+        try:
+            datetime.strptime(value, "%H:%M:%S")
+        except ValueError:
+            raise ValueError("Invalid start time format. Use HH:MM:SS")
+        return value
+
+    @validator("duration")
+    def validate_duration(cls, value):
+        if value <= 0:
+            raise ValueError("Duration must be a positive integer")
+        return value
 
     class Config:
         schema_extra = {
@@ -95,8 +111,9 @@ async def get_current_user(token: str = Depends(oauth2_scheme)) -> str:
 @app.post("/token", response_model=Token)
 async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
     # In production, validate against a database
-    # WARNING: Change the hardcoded username and password in production!
-    if form_data.username != "admin" or form_data.password != "admin":  # Change in production
+    admin_username = settings.ADMIN_USERNAME
+    admin_password = settings.ADMIN_PASSWORD
+    if form_data.username != admin_username or not verify_password(form_data.password, get_password_hash(admin_password)):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect username or password",
@@ -129,10 +146,20 @@ async def launch_pipeline(
             exports=[],
             error=str(e)
         )
+    except PipelineError as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Pipeline failed: {str(e)}"
+        )
+    except subprocess.CalledProcessError as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Subprocess error: {str(e.stderr)}"
+        )
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=str(e)
+            detail=f"An unexpected error occurred: {str(e)}"
         )
 
 @app.get("/exports", response_model=List[str])
