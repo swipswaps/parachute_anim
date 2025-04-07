@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gh repo create --public
+gh repo create parachute_anim --public
