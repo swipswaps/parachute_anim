@@ -20,12 +20,3 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# OpenFOAM temp files
-*.foam
-processor*/
-*[0-9].[0-9]*/
-*[0-9]/
-!0/
-!system/
-!constant/
