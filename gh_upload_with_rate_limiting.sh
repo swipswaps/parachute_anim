@@ -144,6 +144,11 @@ get_all_files() {
     -not -path "*/build/*" \
     -not -path "*/AliceVision/*" \
     -not -path "*/OpenFOAM*/*" \
+    -not -path "*/.env" \
+    -not -path "*/*.pem" \
+    -not -path "*/*.key" \
+    -not -path "*/*.crt" \
+    -not -path "*/.config/gh/*" \
     | sort
 }
 
