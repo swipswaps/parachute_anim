@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Capture</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2563eb;
+        }
+        #error-log {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 20px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            max-height: 500px;
+            overflow-y: auto;
+            user-select: text;
+            -webkit-user-select: text;
+        }
+        .error {
+            color: #dc2626;
+            margin-bottom: 10px;
+        }
+        .warning {
+            color: #d97706;
+            margin-bottom: 10px;
+        }
+        .info {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Error Capture Tool</h1>
+    <p>This tool captures errors from the console and displays them here.</p>
+
+    <div>
+        <button id="start-capture">Start Capturing</button>
+        <button id="clear-log">Clear Log</button>
+        <button id="select-all">Select All Text</button>
+        <button id="copy-log">Copy to Clipboard</button>
+        <button id="open-app">Open App</button>
+    </div>
+
+    <div id="error-log"></div>
+
+    <script>
+        const errorLog = document.getElementById('error-log');
+        const startCaptureBtn = document.getElementById('start-capture');
+        const clearLogBtn = document.getElementById('clear-log');
+        const selectAllBtn = document.getElementById('select-all');
+        const copyLogBtn = document.getElementById('copy-log');
+        const openAppBtn = document.getElementById('open-app');
+
+        let isCapturing = false;
+        let originalConsoleError = console.error;
+        let originalConsoleWarn = console.warn;
+        let originalConsoleLog = console.log;
+
+        function startCapturing() {
+            if (isCapturing) return;
+
+            isCapturing = true;
+            startCaptureBtn.textContent = 'Stop Capturing';
+
+            // Override console methods
+            console.error = function() {
+                originalConsoleError.apply(console, arguments);
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'error';
+                errorDiv.textContent = 'ERROR: ' + Array.from(arguments).join(' ');
+                errorLog.appendChild(errorDiv);
+                errorLog.scrollTop = errorLog.scrollHeight;
+            };
+
+            console.warn = function() {
+                originalConsoleWarn.apply(console, arguments);
+                const warnDiv = document.createElement('div');
+                warnDiv.className = 'warning';
+                warnDiv.textContent = 'WARNING: ' + Array.from(arguments).join(' ');
+                errorLog.appendChild(warnDiv);
+                errorLog.scrollTop = errorLog.scrollHeight;
+            };
+
+            console.log = function() {
+                originalConsoleLog.apply(console, arguments);
+                const logDiv = document.createElement('div');
+                logDiv.className = 'info';
+                logDiv.textContent = 'INFO: ' + Array.from(arguments).join(' ');
+                errorLog.appendChild(logDiv);
+                errorLog.scrollTop = errorLog.scrollHeight;
+            };
+        }
+
+        function stopCapturing() {
+            if (!isCapturing) return;
+
+            isCapturing = false;
+            startCaptureBtn.textContent = 'Start Capturing';
+
+            // Restore original console methods
+            console.error = originalConsoleError;
+            console.warn = originalConsoleWarn;
+            console.log = originalConsoleLog;
+        }
+
+        startCaptureBtn.addEventListener('click', function() {
+            if (isCapturing) {
+                stopCapturing();
+            } else {
+                startCapturing();
+            }
+        });
+
+        clearLogBtn.addEventListener('click', function() {
+            errorLog.innerHTML = '';
+        });
+
+        copyLogBtn.addEventListener('click', function() {
+            const text = errorLog.innerText;
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Log copied to clipboard');
+            }, function() {
+                alert('Failed to copy log');
+            });
+        });
+
+        openAppBtn.addEventListener('click', function() {
+            window.open('http://localhost:5173/accessibility', '_blank');
+        });
+
+        selectAllBtn.addEventListener('click', function() {
+            const range = document.createRange();
+            range.selectNodeContents(errorLog);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+        });
+
+        // Start capturing automatically
+        startCapturing();
+
+        // Add a message to the log
+        const startupDiv = document.createElement('div');
+        startupDiv.className = 'info';
+        startupDiv.textContent = 'INFO: Error capture tool initialized. Click "Open App" to open the application in a new tab.';
+        errorLog.appendChild(startupDiv);
+
+        // Create an iframe to load the app and capture errors
+        function createAppFrame() {
+            const frameDiv = document.createElement('div');
+            frameDiv.style.display = 'none';
+            document.body.appendChild(frameDiv);
+
+            const frame = document.createElement('iframe');
+            frame.style.width = '1px';
+            frame.style.height = '1px';
+            frame.style.opacity = '0.01';
+            frame.style.position = 'absolute';
+            frame.style.left = '-9999px';
+            frame.src = 'http://localhost:5173/accessibility';
+
+            frameDiv.appendChild(frame);
+
+            // Add a message to the log
+            const frameDiv2 = document.createElement('div');
+            frameDiv2.className = 'info';
+            frameDiv2.textContent = 'INFO: App loaded in background iframe to capture errors.';
+            errorLog.appendChild(frameDiv2);
+        }
+
+        // Create the app frame after a short delay
+        setTimeout(createAppFrame, 2000);
+    </script>
+</body>
+</html>

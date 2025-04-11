@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Mode</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        #app-container {
+            flex: 1;
+            border-right: 1px solid #ccc;
+            overflow: hidden;
+            position: relative;
+        }
+        #error-container {
+            width: 40%;
+            overflow-y: auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        #error-log {
+            margin-top: 20px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            user-select: text !important;
+            -webkit-user-select: text !important;
+            -moz-user-select: text !important;
+            -ms-user-select: text !important;
+            cursor: text !important;
+        }
+        .error {
+            color: #dc2626;
+            margin-bottom: 10px;
+            border-left: 3px solid #dc2626;
+            padding-left: 10px;
+        }
+        .warning {
+            color: #d97706;
+            margin-bottom: 10px;
+            border-left: 3px solid #d97706;
+            padding-left: 10px;
+        }
+        .info {
+            color: #2563eb;
+            margin-bottom: 10px;
+            border-left: 3px solid #2563eb;
+            padding-left: 10px;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: #1f2937;
+        }
+        .controls {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1d4ed8;
+        }
+        #app-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .timestamp {
+            color: #6b7280;
+            font-size: 0.8rem;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app-container">
+        <iframe id="app-frame" src="http://localhost:5173/accessibility"></iframe>
+    </div>
+    <div id="error-container">
+        <h1>Debug Console</h1>
+        <div class="controls">
+            <button id="clear-log">Clear Log</button>
+            <button id="select-all">Select All</button>
+            <button id="copy-log">Copy Log</button>
+            <button id="reload-app">Reload App</button>
+        </div>
+        <div id="error-log"></div>
+    </div>
+
+    <script>
+        const errorLog = document.getElementById('error-log');
+        const clearLogBtn = document.getElementById('clear-log');
+        const selectAllBtn = document.getElementById('select-all');
+        const copyLogBtn = document.getElementById('copy-log');
+        const reloadAppBtn = document.getElementById('reload-app');
+        const appFrame = document.getElementById('app-frame');
+
+        // Override console methods in the iframe
+        function overrideConsole() {
+            try {
+                const frameWindow = appFrame.contentWindow;
+                if (!frameWindow) return;
+
+                // Store original console methods
+                const originalConsoleError = frameWindow.console.error;
+                const originalConsoleWarn = frameWindow.console.warn;
+                const originalConsoleLog = frameWindow.console.log;
+
+                // Override console.error
+                frameWindow.console.error = function() {
+                    originalConsoleError.apply(frameWindow.console, arguments);
+                    logMessage('error', Array.from(arguments).join(' '));
+                };
+
+                // Override console.warn
+                frameWindow.console.warn = function() {
+                    originalConsoleWarn.apply(frameWindow.console, arguments);
+                    logMessage('warning', Array.from(arguments).join(' '));
+                };
+
+                // Override console.log
+                frameWindow.console.log = function() {
+                    originalConsoleLog.apply(frameWindow.console, arguments);
+                    logMessage('info', Array.from(arguments).join(' '));
+                };
+
+                // Capture uncaught errors
+                frameWindow.addEventListener('error', function(event) {
+                    logMessage('error', `Uncaught error: ${event.message}\nAt: ${event.filename}:${event.lineno}:${event.colno}\nStack: ${event.error?.stack || 'No stack trace available'}`);
+                    event.preventDefault();
+                });
+
+                // Capture unhandled promise rejections
+                frameWindow.addEventListener('unhandledrejection', function(event) {
+                    logMessage('error', `Unhandled promise rejection: ${event.reason}\nStack: ${event.reason?.stack || 'No stack trace available'}`);
+                    event.preventDefault();
+                });
+
+                logMessage('info', 'Console methods overridden successfully');
+            } catch (error) {
+                logMessage('error', `Failed to override console methods: ${error.message}`);
+            }
+        }
+
+        // Log a message to the error log
+        function logMessage(type, message) {
+            const timestamp = new Date().toISOString().split('T')[1].split('.')[0];
+            const messageDiv = document.createElement('div');
+            messageDiv.className = type;
+
+            const timestampSpan = document.createElement('span');
+            timestampSpan.className = 'timestamp';
+            timestampSpan.textContent = `[${timestamp}]`;
+
+            messageDiv.appendChild(timestampSpan);
+            messageDiv.appendChild(document.createTextNode(message));
+
+            errorLog.appendChild(messageDiv);
+            errorLog.scrollTop = errorLog.scrollHeight;
+        }
+
+        // Clear the error log
+        clearLogBtn.addEventListener('click', function() {
+            errorLog.innerHTML = '';
+        });
+
+        // Copy the error log to clipboard
+        copyLogBtn.addEventListener('click', function() {
+            // Create a temporary textarea element to hold the text
+            const textarea = document.createElement('textarea');
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+
+            // Get the text from the error log
+            const text = Array.from(errorLog.children).map(child => {
+                const timestamp = child.querySelector('.timestamp')?.textContent || '';
+                const message = child.textContent.substring(timestamp.length);
+                return `${timestamp} ${message}`;
+            }).join('\n');
+
+            // Set the textarea value and add it to the document
+            textarea.value = text;
+            document.body.appendChild(textarea);
+
+            // Select the text and copy it
+            textarea.select();
+            document.execCommand('copy');
+
+            // Remove the textarea
+            document.body.removeChild(textarea);
+
+            // Log the success message
+            logMessage('info', 'Log copied to clipboard');
+        });
+
+        // Reload the app
+        reloadAppBtn.addEventListener('click', function() {
+            appFrame.src = appFrame.src;
+        });
+
+        // Select all text in the error log
+        selectAllBtn.addEventListener('click', function() {
+            // Create a range and selection
+            const range = document.createRange();
+            range.selectNodeContents(errorLog);
+
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+
+            // Log a message
+            logMessage('info', 'All text selected. Use Ctrl+C to copy.');
+        });
+
+        // Wait for the iframe to load
+        appFrame.addEventListener('load', function() {
+            logMessage('info', 'App loaded, overriding console methods...');
+            // Give the app a moment to initialize
+            setTimeout(overrideConsole, 1000);
+        });
+
+        // Add keyboard shortcut for Ctrl+A to select all text
+        document.addEventListener('keydown', function(event) {
+            // Check if Ctrl+A is pressed and the focus is in the error container
+            if (event.ctrlKey && event.key === 'a' && document.activeElement.closest('#error-container')) {
+                // Prevent the default behavior
+                event.preventDefault();
+
+                // Select all text in the error log
+                const range = document.createRange();
+                range.selectNodeContents(errorLog);
+
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+        });
+
+        // Initial log message
+        logMessage('info', 'Debug mode initialized. The app will load in the left panel, and errors will be displayed here.');
+    </script>
+</body>
+</html>
