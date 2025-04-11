@@ -1,0 +1,272 @@
+{
+  "app": {
+    "name": "Parachute 3D Pipeline",
+    "tagline": "Create amazing 3D models from videos"
+  },
+  "nav": {
+    "home": "Home",
+    "upload": "Upload",
+    "gallery": "Gallery",
+    "login": "Login",
+    "register": "Register",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "home": {
+    "title": "Welcome to Parachute 3D Pipeline",
+    "subtitle": "Create amazing 3D models from videos using our advanced photogrammetry technology",
+    "getStarted": "Get Started",
+    "features": {
+      "title": "Features",
+      "upload": {
+        "title": "Upload Videos",
+        "description": "Upload your videos or provide YouTube URLs to create 3D models"
+      },
+      "process": {
+        "title": "Automatic Processing",
+        "description": "Our AI-powered pipeline automatically processes your videos into 3D models"
+      },
+      "view": {
+        "title": "View & Share",
+        "description": "View your 3D models in our interactive viewer and share them with others"
+      }
+    }
+  },
+  "upload": {
+    "title": "Upload Video",
+    "tabs": {
+      "upload": "Upload Video",
+      "youtube": "YouTube URL"
+    },
+    "dropzone": {
+      "title": "Drag & Drop Video",
+      "subtitle": "or click to browse",
+      "formats": "Supported formats: MP4, MOV, AVI",
+      "maxSize": "Maximum file size: 500MB"
+    },
+    "youtube": {
+      "title": "YouTube URL",
+      "placeholder": "Enter YouTube URL",
+      "submit": "Process Video"
+    },
+    "timeSettings": {
+      "title": "Time Settings",
+      "startTime": "Start Time",
+      "duration": "Duration",
+      "seconds": "seconds"
+    },
+    "submit": "Upload & Process",
+    "progress": {
+      "uploading": "Uploading...",
+      "processing": "Processing...",
+      "complete": "Complete!",
+      "error": "Error"
+    }
+  },
+  "gallery": {
+    "title": "Your 3D Models",
+    "tabs": {
+      "all": "All Models",
+      "recent": "Recent",
+      "favorites": "Favorites",
+      "shared": "Shared"
+    },
+    "empty": {
+      "all": "You don't have any 3D models yet",
+      "recent": "You don't have any recent 3D models",
+      "favorites": "You don't have any favorite 3D models",
+      "shared": "You don't have any shared 3D models"
+    },
+    "card": {
+      "created": "Created",
+      "status": "Ready to view",
+      "download": "Download",
+      "view": "View Model"
+    }
+  },
+  "viewer": {
+    "controls": {
+      "environment": "Environment",
+      "advanced": "Advanced",
+      "grid": "Show Grid",
+      "axes": "Show Axes",
+      "lightIntensity": "Light Intensity",
+      "rotationSpeed": "Rotation Speed",
+      "autoRotate": "Auto-rotate",
+      "share": "Share",
+      "download": "Download",
+      "fullscreen": "Fullscreen"
+    },
+    "environments": {
+      "studio": "Studio",
+      "sunset": "Sunset",
+      "dawn": "Dawn",
+      "night": "Night",
+      "warehouse": "Warehouse",
+      "forest": "Forest",
+      "apartment": "Apartment",
+      "park": "Park"
+    },
+    "info": {
+      "title": "Model Information",
+      "name": "Name",
+      "format": "Format",
+      "created": "Created",
+      "vertices": "Vertices",
+      "faces": "Faces",
+      "size": "File Size"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Login",
+      "forgotPassword": "Forgot Password?",
+      "noAccount": "Don't have an account?",
+      "register": "Register"
+    },
+    "register": {
+      "title": "Register",
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "submit": "Register",
+      "hasAccount": "Already have an account?",
+      "login": "Login"
+    },
+    "forgotPassword": {
+      "title": "Forgot Password",
+      "email": "Email",
+      "submit": "Send Reset Link",
+      "back": "Back to Login"
+    },
+    "resetPassword": {
+      "title": "Reset Password",
+      "password": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "submit": "Reset Password"
+    },
+    "profile": {
+      "title": "Profile",
+      "tabs": {
+        "info": "Personal Info",
+        "password": "Password",
+        "preferences": "Preferences"
+      },
+      "info": {
+        "name": "Name",
+        "email": "Email",
+        "save": "Save Changes"
+      },
+      "password": {
+        "current": "Current Password",
+        "new": "New Password",
+        "confirm": "Confirm New Password",
+        "save": "Update Password"
+      },
+      "preferences": {
+        "language": "Language",
+        "theme": "Theme",
+        "notifications": "Notifications",
+        "save": "Save Preferences"
+      }
+    }
+  },
+  "share": {
+    "title": "Share Model",
+    "tabs": {
+      "link": "Link",
+      "email": "Email",
+      "social": "Social",
+      "embed": "Embed"
+    },
+    "link": {
+      "title": "Share Link",
+      "copy": "Copy Link",
+      "copied": "Copied!"
+    },
+    "email": {
+      "title": "Share via Email",
+      "recipient": "Recipient Email",
+      "subject": "Check out this 3D model",
+      "message": "I wanted to share this 3D model with you",
+      "send": "Send Email"
+    },
+    "social": {
+      "title": "Share on Social Media",
+      "facebook": "Share on Facebook",
+      "twitter": "Share on Twitter"
+    },
+    "embed": {
+      "title": "Embed on Website",
+      "code": "Embed Code",
+      "copy": "Copy Code",
+      "copied": "Copied!",
+      "preview": "Preview"
+    },
+    "settings": {
+      "title": "Share Settings",
+      "visibility": "Visibility",
+      "public": "Public",
+      "private": "Private",
+      "allowEmbed": "Allow Embedding",
+      "restrictDomains": "Restrict to Domains",
+      "domains": "Allowed Domains",
+      "save": "Save Settings"
+    }
+  },
+  "pwa": {
+    "install": {
+      "title": "Install App",
+      "message": "Install Parachute 3D Pipeline for a better experience",
+      "button": "Install"
+    },
+    "offline": {
+      "title": "Offline Mode",
+      "message": "You are currently offline. Some features may not be available."
+    }
+  },
+  "errors": {
+    "general": "An error occurred",
+    "network": "Network error. Please check your connection.",
+    "auth": {
+      "invalidCredentials": "Invalid email or password",
+      "emailInUse": "Email is already in use",
+      "weakPassword": "Password is too weak",
+      "unauthorized": "You are not authorized to access this resource"
+    },
+    "upload": {
+      "tooLarge": "File is too large",
+      "invalidFormat": "Invalid file format",
+      "failed": "Upload failed"
+    },
+    "processing": {
+      "failed": "Processing failed"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "success": "Success!",
+    "error": "Error!",
+    "warning": "Warning!",
+    "info": "Information"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "de": "Deutsch",
+    "ja": "日本語"
+  }
+}

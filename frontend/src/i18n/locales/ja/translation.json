@@ -1,0 +1,37 @@
+{
+  "app": {
+    "name": "Parachute 3D Pipeline",
+    "tagline": "動画から素晴らしい3Dモデルを作成"
+  },
+  "nav": {
+    "home": "ホーム",
+    "upload": "アップロード",
+    "gallery": "ギャラリー",
+    "login": "ログイン",
+    "register": "登録",
+    "profile": "プロフィール",
+    "logout": "ログアウト"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "close": "閉じる",
+    "confirm": "確認",
+    "yes": "はい",
+    "no": "いいえ",
+    "success": "成功！",
+    "error": "エラー！",
+    "warning": "警告！",
+    "info": "情報"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "de": "Deutsch",
+    "ja": "日本語"
+  }
+}

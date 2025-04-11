@@ -1,0 +1,37 @@
+{
+  "app": {
+    "name": "Parachute 3D Pipeline",
+    "tagline": "Crea increíbles modelos 3D a partir de videos"
+  },
+  "nav": {
+    "home": "Inicio",
+    "upload": "Subir",
+    "gallery": "Galería",
+    "login": "Iniciar sesión",
+    "register": "Registrarse",
+    "profile": "Perfil",
+    "logout": "Cerrar sesión"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "close": "Cerrar",
+    "confirm": "Confirmar",
+    "yes": "Sí",
+    "no": "No",
+    "success": "¡Éxito!",
+    "error": "¡Error!",
+    "warning": "¡Advertencia!",
+    "info": "Información"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "de": "Deutsch",
+    "ja": "日本語"
+  }
+}

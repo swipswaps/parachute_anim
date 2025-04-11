@@ -1,0 +1,272 @@
+{
+  "app": {
+    "name": "Parachute 3D Pipeline",
+    "tagline": "Créez des modèles 3D incroyables à partir de vidéos"
+  },
+  "nav": {
+    "home": "Accueil",
+    "upload": "Télécharger",
+    "gallery": "Galerie",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "profile": "Profil",
+    "logout": "Déconnexion"
+  },
+  "home": {
+    "title": "Bienvenue sur Parachute 3D Pipeline",
+    "subtitle": "Créez des modèles 3D incroyables à partir de vidéos grâce à notre technologie avancée de photogrammétrie",
+    "getStarted": "Commencer",
+    "features": {
+      "title": "Fonctionnalités",
+      "upload": {
+        "title": "Télécharger des vidéos",
+        "description": "Téléchargez vos vidéos ou fournissez des URL YouTube pour créer des modèles 3D"
+      },
+      "process": {
+        "title": "Traitement automatique",
+        "description": "Notre pipeline alimenté par l'IA traite automatiquement vos vidéos en modèles 3D"
+      },
+      "view": {
+        "title": "Visualiser et partager",
+        "description": "Visualisez vos modèles 3D dans notre visionneuse interactive et partagez-les avec d'autres"
+      }
+    }
+  },
+  "upload": {
+    "title": "Télécharger une vidéo",
+    "tabs": {
+      "upload": "Télécharger une vidéo",
+      "youtube": "URL YouTube"
+    },
+    "dropzone": {
+      "title": "Glisser-déposer une vidéo",
+      "subtitle": "ou cliquez pour parcourir",
+      "formats": "Formats pris en charge : MP4, MOV, AVI",
+      "maxSize": "Taille maximale du fichier : 500 Mo"
+    },
+    "youtube": {
+      "title": "URL YouTube",
+      "placeholder": "Entrez l'URL YouTube",
+      "submit": "Traiter la vidéo"
+    },
+    "timeSettings": {
+      "title": "Paramètres de temps",
+      "startTime": "Heure de début",
+      "duration": "Durée",
+      "seconds": "secondes"
+    },
+    "submit": "Télécharger et traiter",
+    "progress": {
+      "uploading": "Téléchargement...",
+      "processing": "Traitement...",
+      "complete": "Terminé !",
+      "error": "Erreur"
+    }
+  },
+  "gallery": {
+    "title": "Vos modèles 3D",
+    "tabs": {
+      "all": "Tous les modèles",
+      "recent": "Récents",
+      "favorites": "Favoris",
+      "shared": "Partagés"
+    },
+    "empty": {
+      "all": "Vous n'avez pas encore de modèles 3D",
+      "recent": "Vous n'avez pas de modèles 3D récents",
+      "favorites": "Vous n'avez pas de modèles 3D favoris",
+      "shared": "Vous n'avez pas de modèles 3D partagés"
+    },
+    "card": {
+      "created": "Créé le",
+      "status": "Prêt à visualiser",
+      "download": "Télécharger",
+      "view": "Voir le modèle"
+    }
+  },
+  "viewer": {
+    "controls": {
+      "environment": "Environnement",
+      "advanced": "Avancé",
+      "grid": "Afficher la grille",
+      "axes": "Afficher les axes",
+      "lightIntensity": "Intensité lumineuse",
+      "rotationSpeed": "Vitesse de rotation",
+      "autoRotate": "Rotation automatique",
+      "share": "Partager",
+      "download": "Télécharger",
+      "fullscreen": "Plein écran"
+    },
+    "environments": {
+      "studio": "Studio",
+      "sunset": "Coucher de soleil",
+      "dawn": "Aube",
+      "night": "Nuit",
+      "warehouse": "Entrepôt",
+      "forest": "Forêt",
+      "apartment": "Appartement",
+      "park": "Parc"
+    },
+    "info": {
+      "title": "Informations sur le modèle",
+      "name": "Nom",
+      "format": "Format",
+      "created": "Créé le",
+      "vertices": "Sommets",
+      "faces": "Faces",
+      "size": "Taille du fichier"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Connexion",
+      "email": "Email",
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "forgotPassword": "Mot de passe oublié ?",
+      "noAccount": "Vous n'avez pas de compte ?",
+      "register": "S'inscrire"
+    },
+    "register": {
+      "title": "S'inscrire",
+      "name": "Nom",
+      "email": "Email",
+      "password": "Mot de passe",
+      "confirmPassword": "Confirmer le mot de passe",
+      "submit": "S'inscrire",
+      "hasAccount": "Vous avez déjà un compte ?",
+      "login": "Se connecter"
+    },
+    "forgotPassword": {
+      "title": "Mot de passe oublié",
+      "email": "Email",
+      "submit": "Envoyer le lien de réinitialisation",
+      "back": "Retour à la connexion"
+    },
+    "resetPassword": {
+      "title": "Réinitialiser le mot de passe",
+      "password": "Nouveau mot de passe",
+      "confirmPassword": "Confirmer le nouveau mot de passe",
+      "submit": "Réinitialiser le mot de passe"
+    },
+    "profile": {
+      "title": "Profil",
+      "tabs": {
+        "info": "Informations personnelles",
+        "password": "Mot de passe",
+        "preferences": "Préférences"
+      },
+      "info": {
+        "name": "Nom",
+        "email": "Email",
+        "save": "Enregistrer les modifications"
+      },
+      "password": {
+        "current": "Mot de passe actuel",
+        "new": "Nouveau mot de passe",
+        "confirm": "Confirmer le nouveau mot de passe",
+        "save": "Mettre à jour le mot de passe"
+      },
+      "preferences": {
+        "language": "Langue",
+        "theme": "Thème",
+        "notifications": "Notifications",
+        "save": "Enregistrer les préférences"
+      }
+    }
+  },
+  "share": {
+    "title": "Partager le modèle",
+    "tabs": {
+      "link": "Lien",
+      "email": "Email",
+      "social": "Réseaux sociaux",
+      "embed": "Intégrer"
+    },
+    "link": {
+      "title": "Partager le lien",
+      "copy": "Copier le lien",
+      "copied": "Copié !"
+    },
+    "email": {
+      "title": "Partager par email",
+      "recipient": "Email du destinataire",
+      "subject": "Découvrez ce modèle 3D",
+      "message": "Je voulais partager ce modèle 3D avec vous",
+      "send": "Envoyer l'email"
+    },
+    "social": {
+      "title": "Partager sur les réseaux sociaux",
+      "facebook": "Partager sur Facebook",
+      "twitter": "Partager sur Twitter"
+    },
+    "embed": {
+      "title": "Intégrer sur un site web",
+      "code": "Code d'intégration",
+      "copy": "Copier le code",
+      "copied": "Copié !",
+      "preview": "Aperçu"
+    },
+    "settings": {
+      "title": "Paramètres de partage",
+      "visibility": "Visibilité",
+      "public": "Public",
+      "private": "Privé",
+      "allowEmbed": "Autoriser l'intégration",
+      "restrictDomains": "Restreindre aux domaines",
+      "domains": "Domaines autorisés",
+      "save": "Enregistrer les paramètres"
+    }
+  },
+  "pwa": {
+    "install": {
+      "title": "Installer l'application",
+      "message": "Installez Parachute 3D Pipeline pour une meilleure expérience",
+      "button": "Installer"
+    },
+    "offline": {
+      "title": "Mode hors ligne",
+      "message": "Vous êtes actuellement hors ligne. Certaines fonctionnalités peuvent ne pas être disponibles."
+    }
+  },
+  "errors": {
+    "general": "Une erreur s'est produite",
+    "network": "Erreur réseau. Veuillez vérifier votre connexion.",
+    "auth": {
+      "invalidCredentials": "Email ou mot de passe invalide",
+      "emailInUse": "Cet email est déjà utilisé",
+      "weakPassword": "Le mot de passe est trop faible",
+      "unauthorized": "Vous n'êtes pas autorisé à accéder à cette ressource"
+    },
+    "upload": {
+      "tooLarge": "Le fichier est trop volumineux",
+      "invalidFormat": "Format de fichier invalide",
+      "failed": "Le téléchargement a échoué"
+    },
+    "processing": {
+      "failed": "Le traitement a échoué"
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "close": "Fermer",
+    "confirm": "Confirmer",
+    "yes": "Oui",
+    "no": "Non",
+    "success": "Succès !",
+    "error": "Erreur !",
+    "warning": "Avertissement !",
+    "info": "Information"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "de": "Deutsch",
+    "ja": "日本語"
+  }
+}
