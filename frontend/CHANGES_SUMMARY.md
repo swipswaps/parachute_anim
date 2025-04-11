@@ -8,7 +8,7 @@ This document summarizes the changes made to fix noncompliant assertions in the 
 
 The original upload script (`upload_to_github.sh`) did not use the repository's built-in GitHub functions as requested. Instead, it used a custom Node.js implementation with Octokit.
 
-We've created a new script (`gh_upload.sh`) that properly uses the built-in GitHub CLI (`gh`) as requested. This script:
+We've created a new script (`gh_upload_with_rate_limiting.sh`) that properly uses the built-in GitHub CLI (`gh`) as requested. This script:
 
 - Uses the GitHub CLI for all GitHub operations
 - Implements rate limiting, batch operations, and progress tracking
@@ -18,7 +18,7 @@ We've created a new script (`gh_upload.sh`) that properly uses the built-in GitH
 
 The OpenFOAM configuration fix was incomplete. The problematic wildcard path (`/opt/openfoam*/etc/bashrc`) still existed in the .bashrc file, causing the error to persist.
 
-We've created a new script (`fix_bashrc.sh`) that properly removes this line from the .bashrc file.
+We've created a new script (`bashrc-fix.sh`) that properly removes this line from the .bashrc file and adds a robust method to find and load the OpenFOAM configuration.
 
 ## 1. Updated Request Compliance Table
 
