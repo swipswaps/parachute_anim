@@ -6,6 +6,40 @@ import './index.css'
 // Import i18n
 import './i18n/i18n';
 
+// Add global error handler for uncaught errors
+window.addEventListener('error', (event) => {
+  console.error('Global error caught:', event.error);
+  // Display error on page for debugging
+  const errorDiv = document.createElement('div');
+  errorDiv.style.position = 'fixed';
+  errorDiv.style.top = '0';
+  errorDiv.style.left = '0';
+  errorDiv.style.right = '0';
+  errorDiv.style.padding = '20px';
+  errorDiv.style.backgroundColor = 'rgba(255, 0, 0, 0.8)';
+  errorDiv.style.color = 'white';
+  errorDiv.style.zIndex = '9999';
+  errorDiv.innerHTML = `<strong>Error:</strong> ${event.error?.message || 'Unknown error'}<br><pre>${event.error?.stack || ''}</pre>`;
+  document.body.appendChild(errorDiv);
+});
+
+// Add handler for unhandled promise rejections
+window.addEventListener('unhandledrejection', (event) => {
+  console.error('Unhandled promise rejection:', event.reason);
+  // Display error on page for debugging
+  const errorDiv = document.createElement('div');
+  errorDiv.style.position = 'fixed';
+  errorDiv.style.top = '0';
+  errorDiv.style.left = '0';
+  errorDiv.style.right = '0';
+  errorDiv.style.padding = '20px';
+  errorDiv.style.backgroundColor = 'rgba(255, 0, 0, 0.8)';
+  errorDiv.style.color = 'white';
+  errorDiv.style.zIndex = '9999';
+  errorDiv.innerHTML = `<strong>Unhandled Promise Rejection:</strong> ${event.reason?.message || 'Unknown error'}<br><pre>${event.reason?.stack || ''}</pre>`;
+  document.body.appendChild(errorDiv);
+});
+
 // Import self-correcting logic
 import { initializeSelfCorrection, cleanupSelfCorrection } from './utils/appInitializer';
 import { startVerification, stopVerification } from './utils/pageLoadVerifier';
