@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robust Error Capture Tool</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        h1 {
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+        textarea {
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+            font-family: monospace;
+            padding: 10px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            line-height: 1.4;
+            font-size: 14px;
+            resize: vertical;
+        }
+        button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+        button:hover {
+            background-color: #1d4ed8;
+        }
+        button:disabled {
+            background-color: #93c5fd;
+            cursor: not-allowed;
+        }
+        .instructions {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .instructions h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #1f2937;
+        }
+        .instructions ol {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+        .instructions li {
+            margin-bottom: 8px;
+        }
+        .instructions li:last-child {
+            margin-bottom: 0;
+        }
+        .status {
+            margin-top: 10px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            display: none;
+        }
+        .status.success {
+            background-color: #d1fae5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+            display: block;
+        }
+        .status.error {
+            background-color: #fee2e2;
+            color: #b91c1c;
+            border: 1px solid #fecaca;
+            display: block;
+        }
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .shortcut {
+            font-size: 0.8rem;
+            color: #6b7280;
+            margin-left: 5px;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #6b7280;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Robust Error Capture Tool</h1>
+    <p>This tool helps you save error messages to a file without losing your data.</p>
+    
+    <div class="instructions">
+        <h2>Instructions:</h2>
+        <ol>
+            <li>Open the application in another tab: <a href="http://localhost:5173/accessibility" target="_blank">Open App</a></li>
+            <li>Open the browser console in that tab (F12 or Ctrl+Shift+J)</li>
+            <li>Copy any error messages from the console</li>
+            <li>Paste them in the text area below</li>
+            <li>Click "Save to File" to download the errors as a text file</li>
+        </ol>
+    </div>
+    
+    <textarea 
+        id="error-text" 
+        placeholder="Paste error messages here..."
+        spellcheck="false"
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+    ></textarea>
+    
+    <div id="status" class="status"></div>
+    
+    <div class="button-group">
+        <button id="save-to-file">
+            Save to File
+            <span class="shortcut">(Ctrl+S)</span>
+        </button>
+        <button id="clear-text">
+            Clear Text
+            <span class="shortcut">(Ctrl+L)</span>
+        </button>
+        <button id="copy-text">
+            Copy All
+            <span class="shortcut">(Ctrl+A, Ctrl+C)</span>
+        </button>
+    </div>
+    
+    <div class="footer">
+        <p>This tool works entirely in your browser and does not send any data to a server.</p>
+    </div>
+    
+    <script>
+        // Get DOM elements
+        const errorText = document.getElementById('error-text');
+        const saveToFileBtn = document.getElementById('save-to-file');
+        const clearTextBtn = document.getElementById('clear-text');
+        const copyTextBtn = document.getElementById('copy-text');
+        const statusEl = document.getElementById('status');
+        
+        // Auto-save to localStorage
+        function saveToLocalStorage() {
+            try {
+                localStorage.setItem('error-capture-text', errorText.value);
+            } catch (error) {
+                console.error('Error saving to localStorage:', error);
+            }
+        }
+        
+        // Load from localStorage
+        function loadFromLocalStorage() {
+            try {
+                const savedText = localStorage.getItem('error-capture-text');
+                if (savedText) {
+                    errorText.value = savedText;
+                }
+            } catch (error) {
+                console.error('Error loading from localStorage:', error);
+            }
+        }
+        
+        // Show status message
+        function showStatus(message, type = 'success') {
+            statusEl.textContent = message;
+            statusEl.className = 'status ' + type;
+            
+            // Auto-hide after 3 seconds
+            setTimeout(() => {
+                statusEl.style.display = 'none';
+            }, 3000);
+        }
+        
+        // Function to save text to a file
+        function saveToFile() {
+            const text = errorText.value;
+            if (!text) {
+                showStatus('No text to save. Please paste error messages first.', 'error');
+                return;
+            }
+            
+            try {
+                const blob = new Blob([text], { type: 'text/plain' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `error-log-${new Date().toISOString().replace(/:/g, '-')}.txt`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                
+                showStatus('Error log saved to file successfully.');
+            } catch (error) {
+                console.error('Error saving file:', error);
+                showStatus('Error saving file: ' + error.message, 'error');
+            }
+        }
+        
+        // Function to clear the text area
+        function clearText() {
+            if (!errorText.value) {
+                showStatus('Text area is already empty.', 'error');
+                return;
+            }
+            
+            if (confirm('Are you sure you want to clear all text? This cannot be undone.')) {
+                errorText.value = '';
+                saveToLocalStorage();
+                showStatus('Text cleared successfully.');
+            }
+        }
+        
+        // Function to copy all text
+        function copyText() {
+            if (!errorText.value) {
+                showStatus('No text to copy.', 'error');
+                return;
+            }
+            
+            try {
+                errorText.select();
+                document.execCommand('copy');
+                
+                // Deselect the text to avoid issues
+                window.getSelection().removeAllRanges();
+                
+                showStatus('Text copied to clipboard successfully.');
+            } catch (error) {
+                console.error('Error copying text:', error);
+                showStatus('Error copying text: ' + error.message, 'error');
+            }
+        }
+        
+        // Event listeners
+        saveToFileBtn.addEventListener('click', saveToFile);
+        clearTextBtn.addEventListener('click', clearText);
+        copyTextBtn.addEventListener('click', copyText);
+        
+        // Auto-save when text changes
+        errorText.addEventListener('input', saveToLocalStorage);
+        
+        // Enable keyboard shortcuts
+        document.addEventListener('keydown', function(event) {
+            // Save: Ctrl+S
+            if (event.ctrlKey && event.key === 's') {
+                event.preventDefault();
+                saveToFile();
+            }
+            
+            // Clear: Ctrl+L
+            if (event.ctrlKey && event.key === 'l') {
+                event.preventDefault();
+                clearText();
+            }
+        });
+        
+        // Load saved text when page loads
+        window.addEventListener('load', loadFromLocalStorage);
+        
+        // Prevent accidental navigation away
+        window.addEventListener('beforeunload', function(event) {
+            if (errorText.value) {
+                event.preventDefault();
+                event.returnValue = 'You have unsaved text. Are you sure you want to leave?';
+                return event.returnValue;
+            }
+        });
+    </script>
+</body>
+</html>

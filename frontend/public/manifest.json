@@ -1,0 +1,71 @@
+{
+  "name": "Parachute 3D Pipeline",
+  "short_name": "Parachute 3D",
+  "description": "Create 3D models from videos using photogrammetry",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Upload Video",
+      "short_name": "Upload",
+      "description": "Upload a video to create a 3D model",
+      "url": "/upload",
+      "icons": [
+        {
+          "src": "icons/upload.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "View Gallery",
+      "short_name": "Gallery",
+      "description": "View your 3D models",
+      "url": "/gallery",
+      "icons": [
+        {
+          "src": "icons/gallery.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/home.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Homescreen of Parachute 3D Pipeline"
+    },
+    {
+      "src": "screenshots/model-viewer.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "3D Model Viewer"
+    }
+  ]
+}
