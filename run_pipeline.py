@@ -5,13 +5,21 @@ import json
 import argparse
 import os
 import time
-import venv  # Import the venv module
+import venv
+from pathlib import Path
 
-# API settings
-API_HOST = os.getenv("API_HOST", "0.0.0.0")
-API_PORT = int(os.getenv("API_PORT", "8000"))
-ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "admin")
-ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "admin")
+# Import settings from config
+try:
+    from config import settings
+except ImportError:
+    # If config.py is not in the path, use environment variables
+    class Settings:
+        API_HOST = os.getenv("API_HOST", "0.0.0.0")
+        API_PORT = int(os.getenv("API_PORT", "8000"))
+        ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "admin")
+        ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "admin")
+        MESHROOM_BIN = os.getenv("MESHROOM_BIN", "/usr/local/bin/meshroom_batch")
+    settings = Settings()
 
 def check_python():
     try:
@@ -56,8 +64,7 @@ def install_dependencies():
         exit(1)
 
 def check_meshroom():
-    meshroom_bin = os.getenv("MESHROOM_BIN", "/usr/local/bin/meshroom_batch")
-    if not os.path.exists(meshroom_bin):
+    if not os.path.exists(settings.MESHROOM_BIN):
         print("Meshroom is not installed or MESHROOM_BIN is not set correctly.")
         print("Please install Meshroom and set the MESHROOM_BIN variable in the .env file.")
         return False
@@ -71,10 +78,10 @@ def start_api_server():
     try:
         process = subprocess.Popen([venv_python, "parachute_3d_pipeline.py"])
         time.sleep(5)  # Wait for the server to start
-        
+
         # Check if the server is running
         try:
-            response = requests.get(f"http://{API_HOST}:{API_PORT}/health")
+            response = requests.get(f"http://{settings.API_HOST}:{settings.API_PORT}/health")
             response.raise_for_status()
             print("API server started successfully.")
             return process
@@ -89,8 +96,8 @@ def start_api_server():
 
 def get_token():
     print("Getting authentication token...")
-    token_url = f"http://{API_HOST}:{API_PORT}/token"
-    data = {"username": ADMIN_USERNAME, "password": ADMIN_PASSWORD}
+    token_url = f"http://{settings.API_HOST}:{settings.API_PORT}/token"
+    data = {"username": settings.ADMIN_USERNAME, "password": settings.ADMIN_PASSWORD}
     try:
         response = requests.post(token_url, data=data)
         response.raise_for_status()
@@ -101,7 +108,7 @@ def get_token():
 
 def launch_job(video_url, start_time, duration, token):
     print("Launching processing job...")
-    launch_url = f"http://{API_HOST}:{API_PORT}/launch"
+    launch_url = f"http://{settings.API_HOST}:{settings.API_PORT}/launch"
     headers = {
         "Authorization": f"Bearer {token}",
         "Content-Type": "application/json",
