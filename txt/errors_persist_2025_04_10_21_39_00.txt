@@ -1,0 +1,26 @@
+
+
+[plugin:vite:import-analysis] Failed to resolve import "../ui/badge" from "src/components/accessibility/AccessibilityAudit.jsx". Does the file exist?
+
+/home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/frontend/src/components/accessibility/AccessibilityAudit.jsx:7:22
+
+21 |  import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card";
+22 |  import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
+23 |  import { Badge } from "../ui/badge";
+   |                         ^
+24 |  import { ScrollArea } from "../ui/scroll-area";
+25 |  import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../ui/collapsible";
+
+    at formatError (file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/frontend/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44066:46)
+    at TransformContext.error (file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/frontend/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44062:19)
+    at normalizeUrl (file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/frontend/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41845:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/frontend/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41999:47
+    at async Promise.all (index 9)
+    at async TransformContext.transform (file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/frontend/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41915:13)
+    at async Object.transform (file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/frontend/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44356:30)
+    at async loadAndTransform (file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/frontend/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:55036:29)
+    at async viteTransformMiddleware (file:///home/owner/Documents/scripts/AI/swipswaps/skydiveu/parachute_anim/frontend/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:64637:32
+
+Click outside, press Esc key, or fix the code to dismiss.
+You can also disable this overlay by setting server.hmr.overlay to false in vite.config.js.
