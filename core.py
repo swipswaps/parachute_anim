@@ -1,299 +1,404 @@
 # /usr/local/lib/parachute/core.py
-# note pathnames are required
-  1 | import subprocess
-  2 | import os
-  3 | import sys
-  4 | import shutil
-  5 | from pathlib import Path
-  6 | from datetime import datetime
-  7 | from typing import List, Optional, Dict, Any
-  8 | from loguru import logger
-  9 | from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
+import subprocess
+import os
+import sys
+import shutil
+from pathlib import Path
+from datetime import datetime
+from typing import List, Optional, Dict, Any
+from loguru import logger
+from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
- 10 | from config import settings
- 11 | 
- 12 | WORK_DIR = Path.home() / "parachute_3d_project"
- 13 | FRAMES_DIR = WORK_DIR / "frames"
- 14 | VIDEO_SEGMENT = WORK_DIR / "video_segment.mp4"
- 15 | OUTPUT_DIR = WORK_DIR / "meshroom_output"
- 16 | EXPORT_DIR = Path.home() / "3d_exports"
- 17 | AUDIT_LOG = WORK_DIR / "audit.log"
- 18 | MESHROOM_BIN = "/usr/local/bin/meshroom_batch"
- 19 | 
- 20 | # Configure logging
- 21 | logger.remove()
- 22 | logger.add(
- 23 |     settings.AUDIT_LOG,
- 24 |     format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}",
- 25 |     level="INFO",
- 26 |     rotation="1 day",
- 27 |     retention="7 days"
- 28 | )
- 29 | logger.add(sys.stderr, level="INFO")
- 30 | 
- 31 | class PipelineError(Exception):
- 32 |     """Base exception for pipeline errors."""
- 33 |     pass
- 34 | 
- 35 | class VideoDownloadError(PipelineError):
- 36 |     """Raised when video download fails."""
- 37 |     pass
- 38 | 
- 39 | class FrameExtractionError(PipelineError):
- 40 |     """Raised when frame extraction fails."""
- 41 |     pass
- 42 | 
- 43 | class MeshroomError(PipelineError):
- 44 |     """Raised when Meshroom processing fails."""
- 45 |     pass
- 46 | 
- 47 | class DependencyError(PipelineError):
- 48 |     """Raised when dependency installation or verification fails."""
- 49 |     pass
- 50 | 
- 51 | class FileSystemError(PipelineError):
- 52 |     """Raised when file system operations fail."""
- 53 |     pass
- 54 | 
- 55 | def check_command_exists(command: str) -> bool:
- 56 |     """Check if a command exists in the system PATH."""
- 57 |     return shutil.which(command) is not None
- 58 | 
- 59 | def check_dependencies() -> Dict[str, bool]:
- 60 |     """Check if all required dependencies are installed."""
- 61 |     dependencies = {
- 62 |         "ffmpeg": check_command_exists("ffmpeg"),
- 63 |         "yt-dlp": check_command_exists("yt-dlp"),
- 64 |         "meshroom": check_command_exists(settings.MESHROOM_BIN)
- 65 |     }
- 66 |     return dependencies
- 67 | 
- 68 | def ensure_directories() -> None:
- 69 |     """Ensure all required directories exist and are writable."""
- 70 |     try:
- 71 |         for directory in [
- 72 |             settings.BASE_DIR,
- 73 |             settings.FRAMES_DIR,
- 74 |             settings.VIDEO_SEGMENT.parent,
- 75 |             settings.OUTPUT_DIR,
- 76 |             settings.EXPORT_DIR
- 77 |         ]:
- 78 |             directory.mkdir(parents=True, exist_ok=True)
- 79 |             # Test if directory is writable
- 80 |             test_file = directory / ".write_test"
- 81 |             test_file.touch()
- 82 |             test_file.unlink()
- 83 |     except Exception as e:
- 84 |         logger.error(f"Directory creation or permission error: {e}")
- 85 |         raise FileSystemError(f"Failed to create or access directories: {e}")
- 86 | 
- 87 | @retry(
- 88 |     stop=stop_after_attempt(3),
- 89 |     wait=wait_exponential(multiplier=1, min=4, max=10),
- 90 |     retry=retry_if_exception_type(subprocess.SubprocessError)
- 91 | )
- 92 | def run_command(command: List[str], shell: bool = False, cwd: Optional[Path] = None) -> subprocess.CompletedProcess:
- 93 |     """Run a subprocess command with logging and error detection."""
- 94 |     logger.info(f"Executing command: {' '.join(command)}")
- 95 |     try:
- 96 |         result = subprocess.run(
- 97 |             command,
- 98 |             shell=shell,
- 99 |             capture_output=True,
-100 |             text=True,
-101 |             cwd=cwd,
-102 |             check=False  # We'll handle the error ourselves
-103 |         )
-104 |         if result.returncode != 0:
-105 |             logger.error(f"Command failed: {result.stderr}")
-106 |             raise subprocess.CalledProcessError(result.returncode, command, result.stdout, result.stderr)
-107 |         return result
-108 |     except subprocess.SubprocessError as e:
-109 |         logger.error(f"Subprocess error: {str(e)}")
-110 |         raise
-111 | 
-112 | def install_dependencies() -> None:
-113 |     """Install required packages using apt and pip."""
-114 |     try:
-115 |         # Check if we need to install dependencies
-116 |         dependencies = check_dependencies()
-117 |         if all(dependencies.values()):
-118 |             logger.info("All dependencies are already installed")
-119 |             return
-120 | 
-121 |         # Install system dependencies if needed
-122 |         if not dependencies["ffmpeg"]:
-123 |             logger.info("Installing ffmpeg...")
-124 |             run_command(["sudo", "apt-get", "update"])
-125 |             run_command(["sudo", "apt-get", "install", "-y", "ffmpeg"])
-126 |         
-127 |         # Install Python dependencies if needed
-128 |         if not dependencies["yt-dlp"]:
-129 |             logger.info("Installing yt-dlp...")
-130 |             run_command([sys.executable, "-m", "pip", "install", "--upgrade", "yt-dlp"])
-131 |         
-132 |         # Verify Meshroom installation
-133 |         if not dependencies["meshroom"]:
-134 |             logger.error("Meshroom is not installed or not in PATH")
-135 |             raise DependencyError("Meshroom is not installed or not in PATH. Please install it manually.")
-136 |         
-137 |         logger.info("Dependencies installed successfully")
-138 |     except subprocess.CalledProcessError as e:
-139 |         logger.error(f"Failed to install dependencies: {e}")
-140 |         raise DependencyError(f"Dependency installation failed: {e}")
-141 | 
-142 | @retry(
-143 |     stop=stop_after_attempt(3),
-144 |     wait=wait_exponential(multiplier=1, min=4, max=10),
-145 |     retry=retry_if_exception_type((subprocess.CalledProcessError, VideoDownloadError))
-146 | )
-147 | def download_segment(url: str, start: str, duration: int) -> None:
-148 |     """Download a segment from a YouTube video using yt-dlp and ffmpeg."""
-149 |     if duration > settings.MAX_DURATION:
-150 |         raise ValueError(f"Duration exceeds maximum allowed time of {settings.MAX_DURATION} seconds")
-151 |     
-152 |     logger.info(f"Downloading video segment from {url} (start: {start}, duration: {duration}s)")
-153 |     try:
-154 |         # Ensure directories exist
-155 |         ensure_directories()
-156 |         
-157 |         # Download video
-158 |         temp_file = settings.BASE_DIR / "temp_download.mp4"
-159 |         try:
-160 |             # First try with yt-dlp
-161 |             run_command(["yt-dlp", "-f", "mp4", "-o", str(temp_file), url])
-162 |         except subprocess.CalledProcessError:
-163 |             # Fallback to youtube-dl if yt-dlp fails
-164 |             logger.warning("yt-dlp failed, trying youtube-dl as fallback")
-165 |             try:
-166 |                 run_command(["youtube-dl", "-f", "mp4", "-o", str(temp_file), url])
-167 |             except subprocess.CalledProcessError as e:
-168 |                 raise VideoDownloadError(f"Both yt-dlp and youtube-dl failed: {e}")
-169 |         
-170 |         # Extract segment
-171 |         run_command([
-172 |             "ffmpeg", "-y", "-ss", start, "-i", str(temp_file),
-173 |             "-t", str(duration), str(settings.VIDEO_SEGMENT)
-174 |         ])
-175 |         
-176 |         # Clean up
-177 |         temp_file.unlink(missing_ok=True)
-178 |         logger.info("Video segment downloaded successfully")
-179 |     except subprocess.CalledProcessError as e:
-180 |         logger.error(f"Failed to download video segment: {e}")
-181 |         raise VideoDownloadError(f"Video download failed: {e}")
-182 |     except Exception as e:
-183 |         logger.error(f"Unexpected error during video download: {e}")
-184 |         raise VideoDownloadError(f"Unexpected error during video download: {e}")
-185 | 
-186 | def extract_frames(fps: int = settings.DEFAULT_FPS) -> None:
-187 |     """Extract frames from the video segment using ffmpeg."""
-188 |     logger.info(f"Extracting frames at {fps} FPS")
-189 |     try:
-190 |         # Ensure video file exists
-191 |         if not settings.VIDEO_SEGMENT.exists():
-192 |             raise FileNotFoundError(f"Video file not found: {settings.VIDEO_SEGMENT}")
-193 |         
-194 |         # Ensure frames directory exists
-195 |         ensure_directories()
-196 |         
-197 |         # Extract frames
-198 |         run_command([
-199 |             "ffmpeg", "-i", str(settings.VIDEO_SEGMENT), "-vf", f"fps={fps}",
-200 |             str(settings.FRAMES_DIR / "frame_%04d.jpg")
-201 |         ])
-202 |         
-203 |         # Verify frames were extracted
-204 |         frame_count = len(list(settings.FRAMES_DIR.glob("*.jpg")))
-205 |         if frame_count == 0:
-206 |             raise FrameExtractionError("No frames were extracted")
-207 |         
-208 |         logger.info(f"Frames extracted successfully: {frame_count} frames")
-209 |     except subprocess.CalledProcessError as e:
-210 |         logger.error(f"Failed to extract frames: {e}")
-211 |         raise FrameExtractionError(f"Frame extraction failed: {e}")
-212 |     except Exception as e:
-213 |         logger.error(f"Unexpected error during frame extraction: {e}")
-214 |         raise FrameExtractionError(f"Unexpected error during frame extraction: {e}")
-215 | 
-216 | def run_meshroom() -> None:
-217 |     """Run Meshroom photogrammetry pipeline."""
-218 |     logger.info("Running Meshroom pipeline")
-219 |     try:
-220 |         # Ensure directories exist
-221 |         ensure_directories()
-222 |         
-223 |         # Check if Meshroom is installed
-224 |         if not check_command_exists(settings.MESHROOM_BIN):
-225 |             raise MeshroomError(f"Meshroom not found at {settings.MESHROOM_BIN}")
-226 |         
-227 |         # Check if we have frames to process
-228 |         frame_count = len(list(settings.FRAMES_DIR.glob("*.jpg")))
-229 |         if frame_count < 10:  # Meshroom typically needs at least 10 frames
-230 |             raise MeshroomError(f"Not enough frames for Meshroom processing: {frame_count} frames found")
-231 |         
-232 |         # Run Meshroom
-233 |         run_command([
-234 |             settings.MESHROOM_BIN,
-235 |             "--input", str(settings.FRAMES_DIR),
-236 |             "--output", str(settings.OUTPUT_DIR)
-237 |         ])
-238 |         
-239 |         logger.info("Meshroom pipeline completed successfully")
-240 |     except subprocess.CalledProcessError as e:
-241 |         logger.error(f"Meshroom pipeline failed: {e}")
-242 |         raise MeshroomError(f"Meshroom processing failed: {e}")
-243 |     except Exception as e:
-244 |         logger.error(f"Unexpected error during Meshroom processing: {e}")
-245 |         raise MeshroomError(f"Unexpected error during Meshroom processing: {e}")
-246 | 
-247 | def collect_exports() -> List[Path]:
-248 |     """Find and log all exportable 3D files."""
-249 |     logger.info("Collecting export files")
-250 |     exported = []
-251 |     try:
-252 |         # Ensure directories exist
-253 |         ensure_directories()
-254 |         
-255 |         # Check if we have any output files
-256 |         if not settings.OUTPUT_DIR.exists() or not any(settings.OUTPUT_DIR.iterdir()):
-257 |             logger.warning("No output files found from Meshroom processing")
-258 |             return []
-259 |         
-260 |         # Collect exports
-261 |         for ext in settings.SUPPORTED_EXPORT_FORMATS:
-262 |             for file in settings.OUTPUT_DIR.rglob(f"*{ext}"):
-263 |                 destination = settings.EXPORT_DIR / file.name
-264 |                 destination.write_bytes(file.read_bytes())
-265 |                 logger.info(f"Exported {file.name} to {destination}")
-266 |                 exported.append(destination)
-267 |         
-268 |         if not exported:
-269 |             logger.warning("No exportable files found")
-270 |         
-271 |         return exported
-272 |     except Exception as e:
-273 |         logger.error(f"Failed to collect exports: {e}")
-274 |         raise PipelineError(f"Export collection failed: {e}")
-275 | 
-276 | def pipeline(url: str, start: str, duration: int) -> List[Path]:
-277 |     """Execute the full 3D processing pipeline."""
-278 |     logger.info("Starting 3D processing pipeline")
-279 |     try:
-280 |         # Initial setup
-281 |         ensure_directories()
-282 |         
-283 |         # Check and install dependencies
-284 |         install_dependencies()
-285 |         
-286 |         # Run pipeline steps
-287 |         download_segment(url=url, start=start, duration=duration)
-288 |         extract_frames(fps=settings.DEFAULT_FPS)
-289 |         run_meshroom()
-290 |         exports = collect_exports()
-291 |         
-292 |         logger.info("Pipeline completed successfully")
-293 |         return exports
-294 |     except Exception as e:
-295 |         logger.error(f"Pipeline failed: {e}")
-296 |         raise
+from config import settings
+
+# Configure logging
+logger.remove()
+logger.add(
+    settings.AUDIT_LOG,
+    format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}",
+    level="INFO",
+    rotation="1 day",
+    retention="7 days"
+)
+logger.add(sys.stderr, level="INFO" if not settings.DEBUG else "DEBUG")
+
+class PipelineError(Exception):
+    """Base exception for pipeline errors."""
+    pass
+
+class VideoDownloadError(PipelineError):
+    """Raised when video download fails."""
+    pass
+
+class FrameExtractionError(PipelineError):
+    """Raised when frame extraction fails."""
+    pass
+
+class MeshroomError(PipelineError):
+    """Raised when Meshroom processing fails."""
+    pass
+
+class DependencyError(PipelineError):
+    """Raised when dependency installation or verification fails."""
+    pass
+
+class FileSystemError(PipelineError):
+    """Raised when file system operations fail."""
+    pass
+def check_command_exists(command: str) -> bool:
+    """Check if a command exists in the system PATH."""
+    return shutil.which(command) is not None
+
+def check_dependencies() -> Dict[str, bool]:
+    """Check if all required dependencies are installed."""
+    dependencies = {
+        "ffmpeg": check_command_exists("ffmpeg"),
+        "yt-dlp": check_command_exists("yt-dlp"),
+        "meshroom": check_command_exists(settings.MESHROOM_BIN)
+    }
+    return dependencies
+
+def ensure_directories() -> None:
+    """Ensure all required directories exist and are writable."""
+    try:
+        for directory in [
+            settings.BASE_DIR,
+            settings.FRAMES_DIR,
+            settings.VIDEO_SEGMENT.parent,
+            settings.OUTPUT_DIR,
+            settings.EXPORT_DIR
+        ]:
+            directory.mkdir(parents=True, exist_ok=True)
+            # Test if directory is writable
+            test_file = directory / ".write_test"
+            test_file.touch()
+            test_file.unlink()
+    except Exception as e:
+        logger.error(f"Directory creation or permission error: {e}")
+        raise FileSystemError(f"Failed to create or access directories: {e}")
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=4, max=10),
+    retry=retry_if_exception_type(subprocess.SubprocessError)
+)
+def run_command(command: List[str], shell: bool = False, cwd: Optional[Path] = None) -> subprocess.CompletedProcess:
+    """Run a subprocess command with logging and error detection."""
+    logger.info(f"Executing command: {' '.join(command)}")
+    try:
+        result = subprocess.run(
+            command,
+            shell=shell,
+            capture_output=True,
+            text=True,
+            cwd=cwd,
+            check=False  # We'll handle the error ourselves
+        )
+        if result.returncode != 0:
+            logger.error(f"Command failed: {result.stderr}")
+            raise subprocess.CalledProcessError(result.returncode, command, result.stdout, result.stderr)
+        return result
+    except subprocess.SubprocessError as e:
+        logger.error(f"Subprocess error: {str(e)}")
+        raise
+def install_dependencies() -> None:
+    """Install required packages using apt and pip."""
+    try:
+        # Check if we need to install dependencies
+        dependencies = check_dependencies()
+        if all(dependencies.values()):
+            logger.info("All dependencies are already installed")
+            return
+
+        # Install system dependencies if needed
+        if not dependencies["ffmpeg"]:
+            logger.info("Installing ffmpeg...")
+            run_command(["sudo", "apt-get", "update"])
+            run_command(["sudo", "apt-get", "install", "-y", "ffmpeg"])
+
+        # Install Python dependencies if needed
+        if not dependencies["yt-dlp"]:
+            logger.info("Installing yt-dlp...")
+            run_command([sys.executable, "-m", "pip", "install", "--upgrade", "yt-dlp"])
+
+        # Verify Meshroom installation
+        if not dependencies["meshroom"]:
+            logger.error("Meshroom is not installed or not in PATH")
+            raise DependencyError("Meshroom is not installed or not in PATH. Please install it manually.")
+
+        logger.info("Dependencies installed successfully")
+    except subprocess.CalledProcessError as e:
+        logger.error(f"Failed to install dependencies: {e}")
+        raise DependencyError(f"Dependency installation failed: {e}")
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=4, max=10),
+    retry=retry_if_exception_type((subprocess.CalledProcessError, VideoDownloadError))
+)
+def download_segment(url: str, start: str, duration: int) -> None:
+    """Download a segment from a YouTube video using yt-dlp and ffmpeg.
+
+    Args:
+        url: URL of the YouTube video
+        start: Start time in format HH:MM:SS
+        duration: Duration in seconds
+
+    Raises:
+        ValueError: If duration exceeds maximum allowed time or start time format is invalid
+        VideoDownloadError: If video download or segment extraction fails
+    """
+    # Validate inputs
+    if duration > settings.MAX_DURATION:
+        raise ValueError(f"Duration exceeds maximum allowed time of {settings.MAX_DURATION} seconds")
+
+    # Validate start time format (HH:MM:SS)
+    import re
+    if not re.match(r'^\d{2}:\d{2}:\d{2}$', start):
+        raise ValueError(f"Start time must be in format HH:MM:SS, got: {start}")
+
+    logger.info(f"Downloading video segment from {url} (start: {start}, duration: {duration}s)")
+    try:
+        # Ensure directories exist
+        ensure_directories()
+
+        # Create a unique temp file name to avoid conflicts in concurrent runs
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        temp_file = settings.BASE_DIR / f"temp_download_{timestamp}.mp4"
+
+        try:
+            # First try with yt-dlp (more modern and usually faster)
+            logger.debug(f"Attempting download with yt-dlp from {url}")
+            run_command(["yt-dlp", "-f", "mp4", "-o", str(temp_file), url])
+        except subprocess.CalledProcessError:
+            # Fallback to youtube-dl if yt-dlp fails
+            logger.warning("yt-dlp failed, trying youtube-dl as fallback")
+            try:
+                run_command(["youtube-dl", "-f", "mp4", "-o", str(temp_file), url])
+            except subprocess.CalledProcessError as e:
+                raise VideoDownloadError(f"Both yt-dlp and youtube-dl failed: {e}")
+
+        # Extract segment
+        logger.debug(f"Extracting segment from {start} for {duration}s")
+        run_command([
+            "ffmpeg", "-y", "-ss", start, "-i", str(temp_file),
+            "-t", str(duration), "-c:v", "copy", "-c:a", "copy", str(settings.VIDEO_SEGMENT)
+        ])
+
+        # Clean up
+        logger.debug(f"Cleaning up temporary file: {temp_file}")
+        temp_file.unlink(missing_ok=True)
+        logger.info("Video segment downloaded successfully")
+    except subprocess.CalledProcessError as e:
+        logger.error(f"Failed to download video segment: {e}")
+        raise VideoDownloadError(f"Video download failed: {e}")
+    except Exception as e:
+        logger.error(f"Unexpected error during video download: {e}")
+        raise VideoDownloadError(f"Unexpected error during video download: {e}")
+
+def extract_frames(fps: int = settings.DEFAULT_FPS) -> int:
+    """Extract frames from the video segment using ffmpeg.
+
+    Args:
+        fps: Frames per second to extract (default: from settings)
+
+    Returns:
+        int: Number of frames extracted
+
+    Raises:
+        FileNotFoundError: If video segment file doesn't exist
+        FrameExtractionError: If frame extraction fails or no frames are extracted
+    """
+    logger.info(f"Extracting frames at {fps} FPS")
+    try:
+        # Ensure video file exists
+        if not settings.VIDEO_SEGMENT.exists():
+            raise FileNotFoundError(f"Video file not found: {settings.VIDEO_SEGMENT}")
+
+        # Ensure frames directory exists and is empty
+        ensure_directories()
+
+        # Clear any existing frames
+        for existing_frame in settings.FRAMES_DIR.glob("*.jpg"):
+            existing_frame.unlink()
+
+        logger.debug(f"Extracting frames from {settings.VIDEO_SEGMENT} at {fps} FPS")
+
+        # Extract frames with higher quality settings
+        run_command([
+            "ffmpeg", "-i", str(settings.VIDEO_SEGMENT),
+            "-vf", f"fps={fps}",
+            "-q:v", "2",  # Higher quality (lower means better quality, range 1-31)
+            str(settings.FRAMES_DIR / "frame_%04d.jpg")
+        ])
+
+        # Verify frames were extracted
+        frame_count = len(list(settings.FRAMES_DIR.glob("*.jpg")))
+        if frame_count == 0:
+            raise FrameExtractionError("No frames were extracted")
+
+        logger.info(f"Frames extracted successfully: {frame_count} frames")
+        return frame_count
+    except subprocess.CalledProcessError as e:
+        logger.error(f"Failed to extract frames: {e}")
+        raise FrameExtractionError(f"Frame extraction failed: {e}")
+    except Exception as e:
+        logger.error(f"Unexpected error during frame extraction: {e}")
+        raise FrameExtractionError(f"Unexpected error during frame extraction: {e}")
+
+def run_meshroom() -> bool:
+    """Run Meshroom photogrammetry pipeline.
+
+    Returns:
+        bool: True if Meshroom processing was successful
+
+    Raises:
+        MeshroomError: If Meshroom is not installed, not enough frames are available,
+                      or if the Meshroom processing fails
+    """
+    logger.info("Running Meshroom pipeline")
+    try:
+        # Ensure directories exist
+        ensure_directories()
+
+        # Check if Meshroom is installed
+        if not check_command_exists(settings.MESHROOM_BIN):
+            raise MeshroomError(f"Meshroom not found at {settings.MESHROOM_BIN}")
+
+        # Check if we have frames to process
+        frame_count = len(list(settings.FRAMES_DIR.glob("*.jpg")))
+        if frame_count < 10:  # Meshroom typically needs at least 10 frames
+            raise MeshroomError(f"Not enough frames for Meshroom processing: {frame_count} frames found")
+
+        logger.debug(f"Starting Meshroom with {frame_count} frames")
+
+        # Clear output directory to prevent mixing with previous runs
+        if settings.OUTPUT_DIR.exists():
+            for item in settings.OUTPUT_DIR.glob("*"):
+                if item.is_file():
+                    item.unlink()
+                elif item.is_dir():
+                    import shutil
+                    shutil.rmtree(item)
+
+        # Run Meshroom with additional parameters for better quality
+        run_command([
+            settings.MESHROOM_BIN,
+            "--input", str(settings.FRAMES_DIR),
+            "--output", str(settings.OUTPUT_DIR),
+            "--cache", str(settings.OUTPUT_DIR / "cache"),
+            "--save", str(settings.OUTPUT_DIR / "project.mg")
+        ])
+
+        logger.info("Meshroom pipeline completed successfully")
+        return True
+    except subprocess.CalledProcessError as e:
+        logger.error(f"Meshroom pipeline failed: {e}")
+        raise MeshroomError(f"Meshroom processing failed: {e}")
+    except Exception as e:
+        logger.error(f"Unexpected error during Meshroom processing: {e}")
+        raise MeshroomError(f"Unexpected error during Meshroom processing: {e}")
+
+def collect_exports() -> List[Path]:
+    """Find and log all exportable 3D files.
+
+    Returns:
+        List[Path]: List of paths to exported 3D model files
+
+    Raises:
+        PipelineError: If export collection fails
+    """
+    logger.info("Collecting export files")
+    exported = []
+    try:
+        # Ensure directories exist
+        ensure_directories()
+
+        # Check if we have any output files
+        if not settings.OUTPUT_DIR.exists() or not any(settings.OUTPUT_DIR.iterdir()):
+            logger.warning("No output files found from Meshroom processing")
+            return []
+
+        # Create a timestamp for unique filenames
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+        # Collect exports
+        for ext in settings.SUPPORTED_EXPORT_FORMATS:
+            for file in settings.OUTPUT_DIR.rglob(f"*{ext}"):
+                # Create a unique filename with timestamp to prevent overwriting
+                unique_name = f"{file.stem}_{timestamp}{file.suffix}"
+                destination = settings.EXPORT_DIR / unique_name
+
+                # Copy the file with progress logging for large files
+                file_size = file.stat().st_size
+                logger.debug(f"Copying {file.name} ({file_size/1024/1024:.2f} MB) to {destination}")
+
+                # Use shutil.copy2 to preserve metadata
+                import shutil
+                shutil.copy2(file, destination)
+
+                logger.info(f"Exported {file.name} to {destination}")
+                exported.append(destination)
+
+        if not exported:
+            logger.warning("No exportable files found")
+
+        return exported
+    except Exception as e:
+        logger.error(f"Failed to collect exports: {e}")
+        raise PipelineError(f"Export collection failed: {e}")
+def pipeline(url: str, start: str, duration: int) -> List[Path]:
+    """Execute the full 3D processing pipeline.
+
+    This function orchestrates the entire process from video download to 3D model export.
+
+    Args:
+        url: URL of the YouTube video
+        start: Start time in format HH:MM:SS
+        duration: Duration in seconds
+
+    Returns:
+        List[Path]: List of paths to exported 3D model files
+
+    Raises:
+        Various exceptions from the individual pipeline steps
+    """
+    start_time = datetime.now()
+    logger.info(f"Starting 3D processing pipeline for video: {url}")
+    try:
+        # Initial setup
+        logger.debug("Setting up directories")
+        ensure_directories()
+
+        # Check and install dependencies
+        logger.debug("Checking dependencies")
+        install_dependencies()
+
+        # Run pipeline steps with timing information
+        step_start = datetime.now()
+        logger.info("Step 1/4: Downloading video segment")
+        download_segment(url=url, start=start, duration=duration)
+        logger.info(f"Video download completed in {(datetime.now() - step_start).total_seconds():.1f} seconds")
+
+        step_start = datetime.now()
+        logger.info("Step 2/4: Extracting frames")
+        frame_count = extract_frames(fps=settings.DEFAULT_FPS)
+        logger.info(f"Frame extraction completed in {(datetime.now() - step_start).total_seconds():.1f} seconds. Extracted {frame_count} frames")
+
+        step_start = datetime.now()
+        logger.info("Step 3/4: Running Meshroom for 3D reconstruction")
+        run_meshroom()
+        logger.info(f"Meshroom processing completed in {(datetime.now() - step_start).total_seconds():.1f} seconds")
+
+        step_start = datetime.now()
+        logger.info("Step 4/4: Collecting and exporting 3D models")
+        exports = collect_exports()
+        logger.info(f"Export collection completed in {(datetime.now() - step_start).total_seconds():.1f} seconds. Exported {len(exports)} files")
+
+        total_time = (datetime.now() - start_time).total_seconds()
+        logger.info(f"Pipeline completed successfully in {total_time:.1f} seconds ({total_time/60:.1f} minutes)")
+
+        # Return the list of exported files
+        return exports
+    except Exception as e:
+        logger.error(f"Pipeline failed: {e}")
+        # Re-raise the exception to be handled by the caller
+        raise
