@@ -12,7 +12,7 @@ This repository has undergone a cleanup process to eliminate false assertions an
 
 3. **Linting Guide**: A LINTING_GUIDE.md file has been created to explain how to identify and "lint" (remove or properly document) proposed but unimplemented changes from the repository.
 
-4. **Assertion Linting Script**: A lint-assertions.sh script has been created to help identify potential false assertions in the codebase.
+4. **Assertion Linting Script**: A `lint-assertions.sh` script has been created to help identify potential false assertions in the codebase.
 
 5. **Code Comments**: Configuration files have been updated to include comments about proposed enhancements that haven't been implemented yet.
 
@@ -45,6 +45,8 @@ cd server && npm install && cd ..
 # Fix OpenFOAM configuration in your .bashrc file
 ./bashrc-fix.sh
 ```
+
+This script removes the problematic wildcard path and adds a robust method to find and load the OpenFOAM configuration.
 
 ### Development
 
@@ -130,6 +132,18 @@ To view logs, navigate to `/debug` in the application.
 - [Proposed Enhancements](./PROPOSED_ENHANCEMENTS.md): Features that have been proposed but not yet implemented
 - [Linting Guide](./LINTING_GUIDE.md): How to identify and fix false assertions in the codebase
 - [Request Compliance Table](./REQUEST_COMPLIANCE_TABLE.md): Documentation of how user requests have been addressed
+- [Changes Summary](./CHANGES_SUMMARY.md): Summary of changes made to fix noncompliant assertions
+
+## GitHub Upload
+
+To upload the repository to GitHub, use the `gh_upload_with_rate_limiting.sh` script in the parent directory:
+
+```bash
+cd ..
+./gh_upload_with_rate_limiting.sh --repo=parachute_anim
+```
+
+This script uses the GitHub CLI (`gh`) with rate limiting to avoid hitting GitHub's rate limits.
 
 ## Folder Structure
 
