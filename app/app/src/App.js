@@ -1,81 +1,73 @@
-import React, { useState } from 'react';
+// Add YouTube URL input state
+const [youtubeUrl, setYoutubeUrl] = useState('');
+const [videoProcessing, setVideoProcessing] = useState(false);
+const [videoFrames, setVideoFrames] = useState([]);
 
-function App() {
-  const [files, setFiles] = useState([]);
-  const [uploading, setUploading] = useState(false);
-  const [message, setMessage] = useState('');
+// Handle YouTube video processing
+const handleYoutubeProcess = async (e) => {
+  e.preventDefault();
+  if (!youtubeUrl) return;
+  
+  setVideoProcessing(true);
+  
+  try {
+    // This is a simplified approach - in a real implementation,
+    // you would call your backend API that handles YouTube processing
+    
+    // Simulate processing with a timeout
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    
+    // For demo purposes, we'll just show a success message
+    alert('Video processed successfully! Processing frames in the background.');
+    
+    // In a real implementation, your backend would:
+    // 1. Download the YouTube video
+    // 2. Extract frames
+    // 3. Process frames through your pipeline
+    // 4. Return results
+    
+    setYoutubeUrl('');
+  } catch (error) {
+    console.error('Error processing video:', error);
+    alert('Failed to process video. Please try again.');
+  } finally {
+    setVideoProcessing(false);
+  }
+};
 
-  const handleFileChange = (e) => {
-    setFiles(Array.from(e.target.files));
-  };
-
-  const handleUpload = async () => {
-    if (files.length === 0) {
-      setMessage('Please select files to upload');
-      return;
-    }
-
-    setUploading(true);
-    setMessage('Uploading files...');
-
-    // Simulate upload
-    setTimeout(() => {
-      setUploading(false);
-      setMessage('Upload successful!');
-      setFiles([]);
-    }, 2000);
-
-    // In a real app, you would use fetch or axios to upload to your API
-    // const formData = new FormData();
-    // files.forEach(file => {
-    //   formData.append('files', file);
-    // });
-    // try {
-    //   const response = await fetch('/api/upload', {
-    //     method: 'POST',
-    //     body: formData,
-    //   });
-    //   const data = await response.json();
-    //   setMessage(data.message);
-    // } catch (error) {
-    //   setMessage('Upload failed: ' + error.message);
-    // } finally {
-    //   setUploading(false);
-    // }
-  };
-
-  return (
-    <div style={{ maxWidth: '600px', margin: '0 auto', padding: '20px' }}>
-      <h1>Parachute 3D Pipeline</h1>
-      <div>
-        <h2>Upload Images</h2>
-        <input 
-          type="file" 
-          multiple 
-          onChange={handleFileChange} 
-          disabled={uploading}
-        />
-        <button 
-          onClick={handleUpload} 
-          disabled={uploading || files.length === 0}
-          style={{ marginLeft: '10px' }}
-        >
-          {uploading ? 'Uploading...' : 'Upload'}
-        </button>
-        {message && <p>{message}</p>}
-        {files.length > 0 && (
-          <div>
-            <h3>Selected Files:</h3>
-            <ul>
-              {files.map((file, index) => (
-                <li key={index}>{file.name}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
+// Add this to your JSX, below your existing upload section
+<div className="youtube-section">
+  <h2>Process YouTube Video</h2>
+  <p>Simply paste a YouTube URL to extract and process video frames</p>
+  
+  <form onSubmit={handleYoutubeProcess}>
+    <input
+      type="text"
+      value={youtubeUrl}
+      onChange={(e) => setYoutubeUrl(e.target.value)}
+      placeholder="https://www.youtube.com/watch?v=..."
+      style={{ width: '80%', padding: '8px', marginRight: '10px' }}
+    />
+    <button 
+      type="submit" 
+      disabled={videoProcessing || !youtubeUrl}
+      style={{ 
+        padding: '8px 16px', 
+        backgroundColor: '#4285f4', 
+        color: 'white', 
+        border: 'none', 
+        borderRadius: '4px',
+        cursor: videoProcessing ? 'not-allowed' : 'pointer'
+      }}
+    >
+      {videoProcessing ? 'Processing...' : 'Process Video'}
+    </button>
+  </form>
+  
+  {videoProcessing && (
+    <div className="processing-indicator">
+      <p>Downloading and processing video frames...</p>
+      {/* You could add a progress bar or spinner here */}
     </div>
-  );
-}
-
-export default App;
+  )}
+</div>
