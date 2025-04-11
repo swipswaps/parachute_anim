@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Error Capture Tool</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2563eb;
+        }
+        textarea {
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+            font-family: monospace;
+            padding: 10px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #1d4ed8;
+        }
+        .instructions {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .instructions h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        .instructions ol {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Error Capture Tool</h1>
+    <p>This tool helps you save error messages to a file.</p>
+    
+    <div class="instructions">
+        <h2>Instructions:</h2>
+        <ol>
+            <li>Open the application in another tab: <a href="http://localhost:5173/accessibility" target="_blank">Open App</a></li>
+            <li>Open the browser console in that tab (F12 or Ctrl+Shift+J)</li>
+            <li>Copy any error messages from the console</li>
+            <li>Paste them in the text area below</li>
+            <li>Click "Save to File" to download the errors as a text file</li>
+        </ol>
+    </div>
+    
+    <textarea id="error-text" placeholder="Paste error messages here..."></textarea>
+    
+    <div>
+        <button id="save-to-file">Save to File</button>
+        <button id="clear-text">Clear Text</button>
+    </div>
+    
+    <script>
+        const errorText = document.getElementById('error-text');
+        const saveToFileBtn = document.getElementById('save-to-file');
+        const clearTextBtn = document.getElementById('clear-text');
+        
+        // Function to save text to a file
+        function saveToFile() {
+            const text = errorText.value;
+            if (!text) {
+                alert('No text to save. Please paste error messages first.');
+                return;
+            }
+            
+            const blob = new Blob([text], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `error-log-${new Date().toISOString().replace(/:/g, '-')}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            alert('Error log saved to file.');
+        }
+        
+        // Function to clear the text area
+        function clearText() {
+            errorText.value = '';
+        }
+        
+        // Event listeners
+        saveToFileBtn.addEventListener('click', saveToFile);
+        clearTextBtn.addEventListener('click', clearText);
+        
+        // Enable Ctrl+S to save
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 's') {
+                event.preventDefault();
+                saveToFile();
+            }
+        });
+    </script>
+</body>
+</html>
