@@ -237,12 +237,23 @@ cd frontend
 npm run build
 ```
 
+## Security
+
+This project includes several security features and best practices:
+
+1. **Environment Variables**: Sensitive information is stored in environment variables
+2. **Secret Generation**: Use the `generate_secrets.sh` script to create secure random keys
+3. **Git Hooks**: Use the `setup-git-hooks.sh` script to prevent accidental commits of sensitive files
+4. **File Permissions**: The `.env` file is set to be readable only by the owner (600)
+
+For more information, see the [Security Guide](./SECURITY_GUIDE.md).
+
 ## Production Deployment
 
 For production deployment:
 
 1. Set appropriate environment variables in `.env`:
-   - Change `SECRET_KEY` to a secure random value
+   - Use the `generate_secrets.sh` script to create a secure random value for `SECRET_KEY`
    - Change `ADMIN_USERNAME` and `ADMIN_PASSWORD` to secure values
    - Set `DEBUG=False`
 
